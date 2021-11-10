@@ -9,7 +9,7 @@ export type DSNPUserURI = string;
 /**
  * Hexadecimal String
  */
-export declare type HexString = string;
+export type HexString = string;
 
 /**
  * hash() takes a string and returns a keccak256 hash string with a 0x prefix.
