@@ -4,6 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": "https://github.com/LibertyDSNP/activity-content",
+  "license":  "Apache-2.0",
   "scripts": {
     "build:cjs": "tsc -p tsconfig.json",
     "ts-types": "tsc --emitDeclarationOnly --outDir ./dist/types",
