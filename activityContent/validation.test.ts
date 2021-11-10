@@ -208,7 +208,7 @@ describe("activity content validations", () => {
       [
         {
           name: "a Video attachment with multiple URLs and one fails a type check (with a malformed hash)",
-          expErr: "DSNPError: Invalid ActivityContent: ActivityContentHash value is invalid",
+          expErr: "Activity Content Error: Invalid ActivityContent: ActivityContentHash value is invalid",
           attachment: [
             {
               name: "Multiple URLs with one having a malformed hash",
@@ -369,7 +369,7 @@ describe("activity content validations", () => {
         },
         {
           name: "an Image attachment with only invalid URLs, throws on first encountered error",
-          expErr: "DSNPError: Invalid ActivityContent: ActivityContentImageLink mediaType is not a string",
+          expErr: "Activity Content Error: Invalid ActivityContent: ActivityContentImageLink mediaType is not a string",
           attachment: [
             {
               type: "Image",
@@ -923,7 +923,7 @@ describe("activity content validations", () => {
       ].forEach((testCase) => {
         it(`throws error for ${testCase.name}`, () => {
           expect(() => requireIsActivityContentProfileType(testCase.testObject)).toThrowError(
-            "DSNPError: Invalid ActivityContent: " + testCase.expErr
+            "Activity Content Error: Invalid ActivityContent: " + testCase.expErr
           );
         });
       });
@@ -1105,7 +1105,7 @@ describe("activity content validations", () => {
       ].forEach((testCase) => {
         it(`throws an error for ${testCase.name}`, () => {
           expect(() => requireValidActivityContentNote(testCase.note)).toThrowError(
-            "DSNPError: Invalid ActivityContent: " + testCase.expErr
+            "Activity Content Error: Invalid ActivityContent: " + testCase.expErr
           );
         });
       });
@@ -1300,7 +1300,7 @@ describe("activity content validations", () => {
       ].forEach((testCase) => {
         it(`throws error for ${testCase.name}`, () => {
           expect(() => requireValidActivityContentProfile(testCase.testObject)).toThrowError(
-            "DSNPError: Invalid ActivityContent: " + testCase.expErr
+            "Activity Content Error: Invalid ActivityContent: " + testCase.expErr
           );
         });
       });
