@@ -2,8 +2,12 @@
   "name": "@dsnp/activity-content",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build:cjs": "tsc -p tsconfig.json",
+    "ts-types": "tsc --emitDeclarationOnly --outDir ./dist/types",
+    "build":  "esbuild index.ts --bundle --outfile=./dist/index.js && npm run ts-types",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

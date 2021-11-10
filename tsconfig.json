@@ -2,11 +2,11 @@
   "compilerOptions": {
     "declaration": true,
     "target": "esnext",
-    "module": "commonjs ",
+    "module": "commonjs",
     "strict": true,
     "noImplicitAny": false,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "outDir": "dist"
+    "outDir": "./dist/types"
   }
 }
