@@ -7,6 +7,11 @@
     "noImplicitAny": false,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "outDir": "./dist/types"
-  }
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "typeRoots": ["node_modules/@types",
+    "src/types"
+  ],
+  "exclude": ["node_modules/**", "./*.ts", "**/*.test.ts"],
 }
