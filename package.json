@@ -12,7 +12,7 @@
   "scripts": {
     "build:cjs": "tsc -p tsconfig.json",
     "ts-types": "tsc --emitDeclarationOnly --outDir ./dist/types",
-    "build": "mkdir -p ./dist/types/ && esbuild ./src/index.ts --bundle --outdir=./dist && npm run ts-types",
+    "build": "mkdir -p ./dist/types/ && esbuild ./src/index.ts src/core/index.ts --bundle --outdir=./dist --outbase=src && npm run ts-types",
     "clean": "rm -Rf dist ./*.d.ts ./*.js ./*.tgz",
     "test": "jest --runInBand"
   },
