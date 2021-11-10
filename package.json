@@ -7,7 +7,8 @@
   "scripts": {
     "build:cjs": "tsc -p tsconfig.json",
     "ts-types": "tsc --emitDeclarationOnly --outDir ./dist/types",
-    "build":  "esbuild index.ts --bundle --outfile=./dist/index.js && npm run ts-types",
+    "build":  "mkdir -p ./dist/types/ && esbuild index.ts --bundle --outfile=./dist/index.js && npm run ts-types",
+    "clean": "rm -Rf dist ./*.d.ts ./*.js ./*.tgz",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
