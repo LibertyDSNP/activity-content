@@ -16,7 +16,11 @@
  *   - `import contracts from "@dsnp/sdk/contracts"; contracts.foo.functionInFoo();`
  *   - `import { foo } from "@dsnp/sdk/contracts"; foo.functionInFoo();`
  */
+import * as factoriesImport from "./factories";
+export const factories = factoriesImport;
 
-export * from "./factories";
-export * from "./errors";
-export * from "./validation";
+import * as errorsImport from "./errors";
+export const errors = errorsImport;
+
+import * as validationImport from "./validation";
+export const validation = validationImport;

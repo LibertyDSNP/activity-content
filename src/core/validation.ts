@@ -15,8 +15,8 @@ import {
   ActivityContentMention,
   ActivityContentLocation,
 } from "./factories";
-import { DSNPUserURI } from "./utilities/types";
-import { isRecord, isString, isNumber, isArrayOfType } from "./utilities/validation";
+import { DSNPUserURI } from "../utilities/types";
+import { isRecord, isString, isNumber, isArrayOfType } from "../utilities/validation";
 import { InvalidActivityContentError } from "./errors";
 
 /**
