@@ -4,29 +4,31 @@
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/LibertyDSNP/activity-content",
-  "license":  "Apache-2.0",
-  "scripts": {
-    "build:cjs": "tsc -p tsconfig.json",
-    "ts-types": "tsc --emitDeclarationOnly --outDir ./dist/types",
-    "build":  "mkdir -p ./dist/types/ && esbuild index.ts --bundle --outfile=./dist/index.js && npm run ts-types",
-    "clean": "rm -Rf dist ./*.d.ts ./*.js ./*.tgz",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LibertyDSNP/activity-content.git"
   },
-  "author": "",
   "license": "ISC",
+  "scripts": {
+    "build:cjs": "tsc -p tsconfig.json",
+    "ts-types": "tsc --emitDeclarationOnly --outDir ./dist/types",
+    "build": "mkdir -p ./dist/types/ && esbuild index.ts --bundle --outfile=./dist/index.js && npm run ts-types",
+    "clean": "rm -Rf dist ./*.d.ts ./*.js ./*.tgz",
+    "test": "jest --runInBand"
+  },
+  "author": "",
   "bugs": {
     "url": "https://github.com/LibertyDSNP/activity-content/issues"
   },
   "homepage": "https://github.com/LibertyDSNP/activity-content#readme",
   "dependencies": {
-    "esbuild": "^0.13.13"
+    "esbuild": "^0.13.13",
+    "js-sha3": "^0.8.0"
   },
   "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7",
     "typescript": "^4.4.4"
   }
 }
