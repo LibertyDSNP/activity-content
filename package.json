@@ -25,16 +25,39 @@
     "esbuild": "^0.13.13",
     "js-sha3": "^0.8.0"
   },
+  "jest": {
+    "setupFiles": [
+      "./jest.config.js"
+    ],
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "tsconfig.json"
+      }
+    },
+    "testResultsProcessor": "jest-junit",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testMatch": [
+      "**/*.test.(ts|js)"
+    ],
+    "testEnvironment": "node"
+  },
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "jest": "^27.3.1",
+    "jest-junit": "^13.0.0",
     "ts-jest": "^27.0.7",
     "ts-node": "^10.4.0",
     "typescript": "^4.4.4"
-  },
-  "jest": {
-    "setupFiles": [
-      "./jest.config.ts"
-    ]
   }
 }
