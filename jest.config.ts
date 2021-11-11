@@ -11,7 +11,7 @@ module.exports = {
     moduleFileExtensions: ["ts", "js", "json"],
     moduleDirectories: ["node_modules", "<rootDir>"],
     preset: "ts-jest",
-    roots: ["<rootDir>/activityContent"],
+    roots: ["<rootDir>"],
     testEnvironment: "node",
     testPathIgnorePatterns: ["/node_modules/", ".js"],
     testResultsProcessor: "jest-junit",

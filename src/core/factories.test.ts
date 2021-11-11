@@ -247,9 +247,9 @@ describe("activityPub", () => {
 
   describe("createLocation", () => {
     it("returns an ActivityContentLocation with the given parameters", () => {
-      const activityContentLocation = createLocation({
-        name: "Earth",
-      });
+      const activityContentLocation = createLocation(
+        "Earth"
+      );
 
       expect(activityContentLocation).toMatchObject({
         type: "Place",

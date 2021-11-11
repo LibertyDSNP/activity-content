@@ -34,7 +34,7 @@ export interface ActivityContentProfile extends ActivityContentBase {
  */
 export interface ActivityContentLocation {
   type: "Place";
-  name?: string;
+  name: string;
   accuracy?: number;
   altitude?: number;
   latitude?: number;
@@ -176,7 +176,7 @@ export interface ActivityContentVideoLink extends ActivityContentLink {
  */
 export interface ActivityContentHash {
   algorithm: string;
-  [others: string]: string;
+  value: string;
 }
 
 /**
@@ -352,8 +352,9 @@ export const createLinkAttachment = (href: string, options?: Partial<ActivityCon
  * @param options - Overrides any default fields for the ActivityContentLocation
  * @returns An ActivityContentLocation object
  */
-export const createLocation = (options?: Partial<ActivityContentLocation>): ActivityContentLocation => ({
+export const createLocation = (name: string, options?: Partial<ActivityContentLocation>): ActivityContentLocation => ({
   type: "Place",
+  name,
   ...options,
 });
 
