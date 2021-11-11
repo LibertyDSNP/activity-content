@@ -1,4 +1,8 @@
-import { ActivityContentAttachment, ActivityContentNote, ActivityContentProfile } from "./factories";
+import {
+  ActivityContentAttachment,
+  ActivityContentNote,
+  ActivityContentProfile,
+} from "./factories";
 import {
   isActivityContentProfileType,
   isActivityContentNoteType,
@@ -35,7 +39,8 @@ describe("activity content validations", () => {
                 hash: [
                   {
                     algorithm: "keccak256",
-                    value: "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
+                    value:
+                      "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
                   },
                 ],
               },
@@ -101,7 +106,8 @@ describe("activity content validations", () => {
                 hash: [
                   {
                     algorithm: "keccak256",
-                    value: "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
+                    value:
+                      "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
                   },
                 ],
               },
@@ -112,37 +118,41 @@ describe("activity content validations", () => {
                 hash: [
                   {
                     algorithm: "keccak256",
-                    value: "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
+                    value:
+                      "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
                   },
                 ],
               },
             ],
           },
         ],
-        "Video attachment with multiple hashes but only one is a valid hash algorithm": [
-          {
-            type: "Video",
-            name: "My video",
-            duration: "PT1H26M39S",
-            url: [
-              {
-                type: "Link",
-                href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm",
-                mediaType: "video/webm",
-                hash: [
-                  {
-                    algorithm: "keccak256",
-                    value: "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
-                  },
-                  {
-                    algorithm: "secp256k1",
-                    value: "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a29999",
-                  },
-                ],
-              },
-            ],
-          },
-        ],
+        "Video attachment with multiple hashes but only one is a valid hash algorithm":
+          [
+            {
+              type: "Video",
+              name: "My video",
+              duration: "PT1H26M39S",
+              url: [
+                {
+                  type: "Link",
+                  href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm",
+                  mediaType: "video/webm",
+                  hash: [
+                    {
+                      algorithm: "keccak256",
+                      value:
+                        "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
+                    },
+                    {
+                      algorithm: "secp256k1",
+                      value:
+                        "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a29999",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         "with a link attachment": [
           {
             type: "Link",
@@ -160,47 +170,53 @@ describe("activity content validations", () => {
                 hash: [
                   {
                     algorithm: "keccak256",
-                    value: "0x3b33df3d163e86514e9041ac97e3d920a75bbafa8d9c1489e631897874b762cc",
+                    value:
+                      "0x3b33df3d163e86514e9041ac97e3d920a75bbafa8d9c1489e631897874b762cc",
                   },
                 ],
               },
             ],
           },
         ],
-        "an Image attachment with multiple URLs, and only one is valid (but all pass the type checks)": [
-          {
-            type: "Image",
-            url: [
-              {
-                type: "Link",
-                href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
-                mediaType: "badMediaType",
-                hash: [
-                  {
-                    algorithm: "keccak256",
-                    value: "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-                  },
-                ],
-              },
-              {
-                type: "Link",
-                name: "this is fine",
-                href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
-                mediaType: "image/jpg",
-                hash: [
-                  {
-                    algorithm: "keccak256",
-                    value: "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-                  },
-                ],
-              },
-            ],
-          },
-        ],
+        "an Image attachment with multiple URLs, and only one is valid (but all pass the type checks)":
+          [
+            {
+              type: "Image",
+              url: [
+                {
+                  type: "Link",
+                  href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
+                  mediaType: "badMediaType",
+                  hash: [
+                    {
+                      algorithm: "keccak256",
+                      value:
+                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
+                    },
+                  ],
+                },
+                {
+                  type: "Link",
+                  name: "this is fine",
+                  href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
+                  mediaType: "image/jpg",
+                  hash: [
+                    {
+                      algorithm: "keccak256",
+                      value:
+                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
       };
       for (const tc in testCases) {
         it(`returns the attachment ${tc}`, () => {
-          expect(requireGetSupportedContentAttachments(testCases[tc])).toStrictEqual(testCases[tc]);
+          expect(
+            requireGetSupportedContentAttachments(testCases[tc])
+          ).toStrictEqual(testCases[tc]);
         });
       }
     });
@@ -208,7 +224,8 @@ describe("activity content validations", () => {
       [
         {
           name: "a Video attachment with multiple URLs and one fails a type check (with a malformed hash)",
-          expErr: "Activity Content Error: Invalid ActivityContent: ActivityContentHash value is invalid",
+          expErr:
+            "Activity Content Error: Invalid ActivityContent: ActivityContentHash value is invalid",
           attachment: [
             {
               name: "Multiple URLs with one having a malformed hash",
@@ -233,7 +250,8 @@ describe("activity content validations", () => {
                   hash: [
                     {
                       algorithm: "keccak256",
-                      value: "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
+                      value:
+                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
                     },
                   ],
                 },
@@ -257,7 +275,8 @@ describe("activity content validations", () => {
                   hash: [
                     {
                       algorithm: "keccak256",
-                      value: "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
+                      value:
+                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
                     },
                   ],
                 },
@@ -280,7 +299,8 @@ describe("activity content validations", () => {
                   hash: [
                     {
                       algorithm: "keccak256",
-                      value: "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
+                      value:
+                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
                     },
                   ],
                 },
@@ -302,7 +322,8 @@ describe("activity content validations", () => {
                   hash: [
                     {
                       algorithm: "keccak256",
-                      value: "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
+                      value:
+                        "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
                     },
                   ],
                 },
@@ -322,7 +343,8 @@ describe("activity content validations", () => {
         },
         {
           name: "audio attachment with an unsupported algorithm",
-          expErr: "ActivityContent hash algorithms must contain at least one of: keccak256",
+          expErr:
+            "ActivityContent hash algorithms must contain at least one of: keccak256",
           attachment: [
             {
               type: "Audio",
@@ -334,7 +356,8 @@ describe("activity content validations", () => {
                   hash: [
                     {
                       algorithm: "secp256k1",
-                      value: "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
+                      value:
+                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
                     },
                   ],
                 },
@@ -369,7 +392,8 @@ describe("activity content validations", () => {
         },
         {
           name: "an Image attachment with only invalid URLs, throws on first encountered error",
-          expErr: "Activity Content Error: Invalid ActivityContent: ActivityContentImageLink mediaType is not a string",
+          expErr:
+            "Activity Content Error: Invalid ActivityContent: ActivityContentImageLink mediaType is not a string",
           attachment: [
             {
               type: "Image",
@@ -380,7 +404,8 @@ describe("activity content validations", () => {
                   hash: [
                     {
                       algorithm: "keccak256",
-                      value: "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
+                      value:
+                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
                     },
                   ],
                 },
@@ -400,7 +425,9 @@ describe("activity content validations", () => {
         },
       ].forEach((testCase) => {
         it(`${testCase.name} throws expected error`, () => {
-          expect(() => requireGetSupportedContentAttachments(testCase.attachment)).toThrowError(testCase.expErr);
+          expect(() =>
+            requireGetSupportedContentAttachments(testCase.attachment)
+          ).toThrowError(testCase.expErr);
         });
       });
     });
@@ -416,7 +443,8 @@ describe("activity content validations", () => {
               hash: [
                 {
                   algorithm: "keccak256",
-                  value: "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
+                  value:
+                    "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
                 },
               ],
             },
@@ -438,9 +466,12 @@ describe("activity content validations", () => {
             },
           ],
         };
-        expect(requireGetSupportedContentAttachments([validAttachment, typeCheckFailingAttachment])).toStrictEqual([
-          validAttachment,
-        ]);
+        expect(
+          requireGetSupportedContentAttachments([
+            validAttachment,
+            typeCheckFailingAttachment,
+          ])
+        ).toStrictEqual([validAttachment]);
       });
       it("with two Image attachments but only one is valid, returns the valid one", () => {
         const validAttachment = {
@@ -453,7 +484,8 @@ describe("activity content validations", () => {
               hash: [
                 {
                   algorithm: "keccak256",
-                  value: "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
+                  value:
+                    "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
                 },
               ],
             },
@@ -468,16 +500,20 @@ describe("activity content validations", () => {
               hash: [
                 {
                   algorithm: "keccak256",
-                  value: "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
+                  value:
+                    "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
                 },
               ],
             },
           ],
         };
 
-        expect(requireGetSupportedContentAttachments([validAttachment, invalidAttachment])).toStrictEqual([
-          validAttachment,
-        ]);
+        expect(
+          requireGetSupportedContentAttachments([
+            validAttachment,
+            invalidAttachment,
+          ])
+        ).toStrictEqual([validAttachment]);
       });
 
       it("with two Link attachments where one is invalid, returns only the valid attachment", () => {
@@ -489,7 +525,12 @@ describe("activity content validations", () => {
           type: "Link",
           href: "ftp://dsnp.org",
         };
-        expect(requireGetSupportedContentAttachments([validAttachment, invalidAttachment])).toHaveLength(1);
+        expect(
+          requireGetSupportedContentAttachments([
+            validAttachment,
+            invalidAttachment,
+          ])
+        ).toHaveLength(1);
       });
       it("with multiple valid attachments of different types, returns all attachments", () => {
         const validImageAttachment = {
@@ -502,7 +543,8 @@ describe("activity content validations", () => {
               hash: [
                 {
                   algorithm: "keccak256",
-                  value: "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
+                  value:
+                    "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
                 },
               ],
             },
@@ -522,11 +564,13 @@ describe("activity content validations", () => {
               hash: [
                 {
                   algorithm: "keccak256",
-                  value: "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
+                  value:
+                    "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
                 },
                 {
                   algorithm: "secp256k1",
-                  value: "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a29999",
+                  value:
+                    "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a29999",
                 },
               ],
             },
@@ -534,7 +578,11 @@ describe("activity content validations", () => {
         };
 
         expect(
-          requireGetSupportedContentAttachments([validLinkAttachment, validImageAttachment, validVideoAttachment])
+          requireGetSupportedContentAttachments([
+            validLinkAttachment,
+            validImageAttachment,
+            validVideoAttachment,
+          ])
         ).toHaveLength(3);
       });
     });
@@ -587,7 +635,8 @@ describe("activity content validations", () => {
                   hash: [
                     {
                       algorithm: "keccak256",
-                      value: "0x3b33df3d163e86514e9041ac97e3d920a75bbafa8d9c1489e631897874b762cc",
+                      value:
+                        "0x3b33df3d163e86514e9041ac97e3d920a75bbafa8d9c1489e631897874b762cc",
                     },
                   ],
                 },
@@ -611,7 +660,8 @@ describe("activity content validations", () => {
                   hash: [
                     {
                       algorithm: "keccak256",
-                      value: "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
+                      value:
+                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
                     },
                   ],
                 },
@@ -635,7 +685,8 @@ describe("activity content validations", () => {
                   hash: [
                     {
                       algorithm: "keccak256",
-                      value: "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
+                      value:
+                        "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
                     },
                   ],
                 },
@@ -643,41 +694,44 @@ describe("activity content validations", () => {
             },
           ],
         },
-        "with a video attachment that has one supported media type and one not": {
-          "@context": "https://www.w3.org/ns/activitystreams",
-          type: "Note",
-          content: "What an adventure!",
-          mediaType: "text/plain",
-          attachment: [
-            {
-              type: "Video",
-              url: [
-                {
-                  type: "Link",
-                  href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm",
-                  mediaType: "video/webm",
-                  hash: [
-                    {
-                      algorithm: "keccak256",
-                      value: "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
-                    },
-                  ],
-                },
-                {
-                  type: "Link",
-                  href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/AWindowsMediaVideo.wmv",
-                  mediaType: "video/wmv",
-                  hash: [
-                    {
-                      algorithm: "keccak256",
-                      value: "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a99999",
-                    },
-                  ],
-                },
-              ],
-            },
-          ],
-        },
+        "with a video attachment that has one supported media type and one not":
+          {
+            "@context": "https://www.w3.org/ns/activitystreams",
+            type: "Note",
+            content: "What an adventure!",
+            mediaType: "text/plain",
+            attachment: [
+              {
+                type: "Video",
+                url: [
+                  {
+                    type: "Link",
+                    href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm",
+                    mediaType: "video/webm",
+                    hash: [
+                      {
+                        algorithm: "keccak256",
+                        value:
+                          "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
+                      },
+                    ],
+                  },
+                  {
+                    type: "Link",
+                    href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/AWindowsMediaVideo.wmv",
+                    mediaType: "video/wmv",
+                    hash: [
+                      {
+                        algorithm: "keccak256",
+                        value:
+                          "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a99999",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
         "with a link attachment": {
           "@context": "https://www.w3.org/ns/activitystreams",
           type: "Note",
@@ -710,7 +764,9 @@ describe("activity content validations", () => {
 
       for (const key in activityContentNotes) {
         it(`returns true for ${key}`, () => {
-          expect(() => requireIsActivityContentNoteType(activityContentNotes[key])).not.toThrow();
+          expect(() =>
+            requireIsActivityContentNoteType(activityContentNotes[key])
+          ).not.toThrow();
         });
       }
     });
@@ -747,9 +803,9 @@ describe("activity content validations", () => {
         },
       ].forEach((testCase) => {
         it(`${testCase.name} throws correct error`, () => {
-          expect(() => requireIsActivityContentNoteType(testCase.testObject)).toThrowError(
-            "Invalid ActivityContent: " + testCase.expErr
-          );
+          expect(() =>
+            requireIsActivityContentNoteType(testCase.testObject)
+          ).toThrowError("Invalid ActivityContent: " + testCase.expErr);
         });
       });
     });
@@ -781,7 +837,8 @@ describe("activity content validations", () => {
               hash: [
                 {
                   algorithm: "keccak256",
-                  value: "0x00a63eb58f6ce7fccd93e2d004fed81da5ec1a9747b63f5f1bf80742026efea7",
+                  value:
+                    "0x00a63eb58f6ce7fccd93e2d004fed81da5ec1a9747b63f5f1bf80742026efea7",
                 },
               ],
             },
@@ -791,7 +848,9 @@ describe("activity content validations", () => {
 
       for (const key in activityContentProfiles) {
         it(`returns true for ${key}`, () => {
-          expect(requireIsActivityContentProfileType(activityContentProfiles[key])).toEqual(true);
+          expect(
+            requireIsActivityContentProfileType(activityContentProfiles[key])
+          ).toEqual(true);
         });
       }
     });
@@ -922,8 +981,11 @@ describe("activity content validations", () => {
         },
       ].forEach((testCase) => {
         it(`throws error for ${testCase.name}`, () => {
-          expect(() => requireIsActivityContentProfileType(testCase.testObject)).toThrowError(
-            "Activity Content Error: Invalid ActivityContent: " + testCase.expErr
+          expect(() =>
+            requireIsActivityContentProfileType(testCase.testObject)
+          ).toThrowError(
+            "Activity Content Error: Invalid ActivityContent: " +
+              testCase.expErr
           );
         });
       });
@@ -954,7 +1016,8 @@ describe("activity content validations", () => {
                   hash: [
                     {
                       algorithm: "keccak256",
-                      value: "0x3b33df3d163e86514e9041ac97e3d920a75bbafa8d9c1489e631897874b762cc",
+                      value:
+                        "0x3b33df3d163e86514e9041ac97e3d920a75bbafa8d9c1489e631897874b762cc",
                     },
                   ],
                 },
@@ -978,7 +1041,8 @@ describe("activity content validations", () => {
                   hash: [
                     {
                       algorithm: "keccak256",
-                      value: "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
+                      value:
+                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
                     },
                   ],
                 },
@@ -1002,7 +1066,8 @@ describe("activity content validations", () => {
                   hash: [
                     {
                       algorithm: "keccak256",
-                      value: "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
+                      value:
+                        "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
                     },
                   ],
                 },
@@ -1053,7 +1118,9 @@ describe("activity content validations", () => {
 
       for (const key in validActivityContentNotes) {
         it(`Does not throw for a ${key}`, () => {
-          expect(() => requireValidActivityContentNote(validActivityContentNotes[key])).not.toThrow();
+          expect(() =>
+            requireValidActivityContentNote(validActivityContentNotes[key])
+          ).not.toThrow();
         });
       }
     });
@@ -1072,7 +1139,8 @@ describe("activity content validations", () => {
             hash: [
               {
                 algorithm: "keccak256",
-                value: "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
+                value:
+                  "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
               },
             ],
           },
@@ -1104,8 +1172,11 @@ describe("activity content validations", () => {
         },
       ].forEach((testCase) => {
         it(`throws an error for ${testCase.name}`, () => {
-          expect(() => requireValidActivityContentNote(testCase.note)).toThrowError(
-            "Activity Content Error: Invalid ActivityContent: " + testCase.expErr
+          expect(() =>
+            requireValidActivityContentNote(testCase.note)
+          ).toThrowError(
+            "Activity Content Error: Invalid ActivityContent: " +
+              testCase.expErr
           );
         });
       });
@@ -1113,7 +1184,10 @@ describe("activity content validations", () => {
   });
   describe("requireValidActivityContentProfile", () => {
     describe("when profile is valid", () => {
-      const validActivityContentProfiles: Record<string, ActivityContentProfile> = {
+      const validActivityContentProfiles: Record<
+        string,
+        ActivityContentProfile
+      > = {
         "a profile object": {
           "@context": "https://www.w3.org/ns/activitystreams",
           type: "Profile",
@@ -1152,7 +1226,8 @@ describe("activity content validations", () => {
               hash: [
                 {
                   algorithm: "keccak256",
-                  value: "0x00a63eb58f6ce7fccd93e2d004fed81da5ec1a9747b63f5f1bf80742026efea7",
+                  value:
+                    "0x00a63eb58f6ce7fccd93e2d004fed81da5ec1a9747b63f5f1bf80742026efea7",
                 },
               ],
             },
@@ -1161,7 +1236,11 @@ describe("activity content validations", () => {
       };
       for (const key in validActivityContentProfiles) {
         it(`returns true for ${key}`, () => {
-          expect(() => requireValidActivityContentProfile(validActivityContentProfiles[key])).not.toThrow();
+          expect(() =>
+            requireValidActivityContentProfile(
+              validActivityContentProfiles[key]
+            )
+          ).not.toThrow();
         });
       }
     });
@@ -1235,7 +1314,8 @@ describe("activity content validations", () => {
         },
         {
           name: "with an icon with an unsupported hash algorithm",
-          expErr: "ActivityContent hash algorithms must contain at least one of: keccak256",
+          expErr:
+            "ActivityContent hash algorithms must contain at least one of: keccak256",
           testObject: {
             "@context": "https://www.w3.org/ns/activitystreams",
             type: "Profile",
@@ -1248,7 +1328,8 @@ describe("activity content validations", () => {
                 hash: [
                   {
                     algorithm: "MD5",
-                    value: "0x00a63eb58f6ce7fccd93e2d004fed81da5ec1a9747b63f5f1bf80742026efea7",
+                    value:
+                      "0x00a63eb58f6ce7fccd93e2d004fed81da5ec1a9747b63f5f1bf80742026efea7",
                   },
                 ],
               },
@@ -1270,7 +1351,8 @@ describe("activity content validations", () => {
                 hash: [
                   {
                     algorithm: "keccak256",
-                    value: "0x00a63eb58f6ce7fccd93e2d004fed81da5ec1a9747b63f5f1bf80742026efea7",
+                    value:
+                      "0x00a63eb58f6ce7fccd93e2d004fed81da5ec1a9747b63f5f1bf80742026efea7",
                   },
                 ],
               },
@@ -1299,8 +1381,11 @@ describe("activity content validations", () => {
         },
       ].forEach((testCase) => {
         it(`throws error for ${testCase.name}`, () => {
-          expect(() => requireValidActivityContentProfile(testCase.testObject)).toThrowError(
-            "Activity Content Error: Invalid ActivityContent: " + testCase.expErr
+          expect(() =>
+            requireValidActivityContentProfile(testCase.testObject)
+          ).toThrowError(
+            "Activity Content Error: Invalid ActivityContent: " +
+              testCase.expErr
           );
         });
       });

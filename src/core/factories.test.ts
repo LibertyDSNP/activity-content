@@ -50,7 +50,8 @@ describe("activityPub", () => {
           hash: [
             {
               algorithm: "keccak256",
-              value: "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
+              value:
+                "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
             },
           ],
         },
@@ -66,7 +67,8 @@ describe("activityPub", () => {
             hash: [
               {
                 algorithm: "keccak256",
-                value: "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
+                value:
+                  "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
               },
             ],
           },
@@ -83,7 +85,8 @@ describe("activityPub", () => {
         [
           {
             algorithm: "keccak256",
-            value: "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
+            value:
+              "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
           },
         ]
       );
@@ -95,7 +98,8 @@ describe("activityPub", () => {
         hash: [
           {
             algorithm: "keccak256",
-            value: "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
+            value:
+              "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
           },
         ],
       });
@@ -112,7 +116,8 @@ describe("activityPub", () => {
           hash: [
             {
               algorithm: "keccak256",
-              value: "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
+              value:
+                "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
             },
           ],
           height: 1564,
@@ -130,7 +135,8 @@ describe("activityPub", () => {
             hash: [
               {
                 algorithm: "keccak256",
-                value: "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
+                value:
+                  "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
               },
             ],
             height: 1564,
@@ -149,7 +155,8 @@ describe("activityPub", () => {
         [
           {
             algorithm: "keccak256",
-            value: "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
+            value:
+              "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
           },
         ]
       );
@@ -161,7 +168,8 @@ describe("activityPub", () => {
         hash: [
           {
             algorithm: "keccak256",
-            value: "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
+            value:
+              "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
           },
         ],
       });
@@ -189,7 +197,8 @@ describe("activityPub", () => {
           hash: [
             {
               algorithm: "keccak256",
-              value: "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
+              value:
+                "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
             },
           ],
           height: 2250,
@@ -207,7 +216,8 @@ describe("activityPub", () => {
             hash: [
               {
                 algorithm: "keccak256",
-                value: "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
+                value:
+                  "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
               },
             ],
             height: 2250,
@@ -226,7 +236,8 @@ describe("activityPub", () => {
         [
           {
             algorithm: "keccak256",
-            value: "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
+            value:
+              "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
           },
         ]
       );
@@ -238,7 +249,8 @@ describe("activityPub", () => {
         hash: [
           {
             algorithm: "keccak256",
-            value: "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
+            value:
+              "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
           },
         ],
       });
@@ -247,9 +259,7 @@ describe("activityPub", () => {
 
   describe("createLocation", () => {
     it("returns an ActivityContentLocation with the given parameters", () => {
-      const activityContentLocation = createLocation(
-        "Earth"
-      );
+      const activityContentLocation = createLocation("Earth");
 
       expect(activityContentLocation).toMatchObject({
         type: "Place",
@@ -285,7 +295,8 @@ describe("activityPub", () => {
 
       expect(activityContentHash).toMatchObject({
         algorithm: "keccak256",
-        value: "0x4a63a2902ad43de8c568bb4a8acbe12e95e8fbfb3babf985ea871e9fccf2dadb",
+        value:
+          "0x4a63a2902ad43de8c568bb4a8acbe12e95e8fbfb3babf985ea871e9fccf2dadb",
       });
     });
   });

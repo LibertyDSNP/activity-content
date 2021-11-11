@@ -1,4 +1,4 @@
-import { DSNPUserURI, hash, HexString} from "../utilities/types"
+import { DSNPUserURI, hash } from "../utilities/types";
 
 interface ActivityContentBase {
   "@context": "https://www.w3.org/ns/activitystreams";
@@ -47,7 +47,9 @@ export interface ActivityContentLocation {
  * ActivityContentTag is either an ActivityContentHashtag or an
  * ActivityContentMention.
  */
-export type ActivityContentTag = ActivityContentHashtag | ActivityContentMention;
+export type ActivityContentTag =
+  | ActivityContentHashtag
+  | ActivityContentMention;
 
 /**
  * ActivityContentHashtag represents a hashtag associated with an
@@ -187,7 +189,10 @@ export interface ActivityContentHash {
  * @param options - Overrides default fields for the ActivityContentNote
  * @returns An ActivityContentNote object
  */
-export const createNote = (content: string, options?: Partial<ActivityContentNote>): ActivityContentNote => ({
+export const createNote = (
+  content: string,
+  options?: Partial<ActivityContentNote>
+): ActivityContentNote => ({
   "@context": "https://www.w3.org/ns/activitystreams",
   type: "Note",
   mediaType: "text/plain",
@@ -202,7 +207,9 @@ export const createNote = (content: string, options?: Partial<ActivityContentNot
  * @param options - Overrides any default fields for the ActivityContentProfile
  * @returns An ActivityContentProfile object
  */
-export const createProfile = (options?: Partial<ActivityContentProfile>): ActivityContentProfile => ({
+export const createProfile = (
+  options?: Partial<ActivityContentProfile>
+): ActivityContentProfile => ({
   "@context": "https://www.w3.org/ns/activitystreams",
   type: "Profile",
   ...options,
@@ -339,7 +346,10 @@ export const createVideoLink = (
  * @param options - Overrides any default fields for the ActivityContentLink
  * @returns An ActivityContentLink object
  */
-export const createLinkAttachment = (href: string, options?: Partial<ActivityContentLink>): ActivityContentLink => ({
+export const createLinkAttachment = (
+  href: string,
+  options?: Partial<ActivityContentLink>
+): ActivityContentLink => ({
   type: "Link",
   href,
   ...options,
@@ -349,10 +359,14 @@ export const createLinkAttachment = (href: string, options?: Partial<ActivityCon
  * createLocation() provides a simple factory for generating an
  * ActivityContentLocation object.
  *
+ * @param name - This is the string provided for name of the Location
  * @param options - Overrides any default fields for the ActivityContentLocation
  * @returns An ActivityContentLocation object
  */
-export const createLocation = (name: string, options?: Partial<ActivityContentLocation>): ActivityContentLocation => ({
+export const createLocation = (
+  name: string,
+  options?: Partial<ActivityContentLocation>
+): ActivityContentLocation => ({
   type: "Place",
   name,
   ...options,
@@ -377,7 +391,10 @@ export const createHashtag = (name: string): ActivityContentHashtag => ({
  * @param options - Any additional fields for the ActivityContentMention
  * @returns An ActivityContentMention object
  */
-export const createMention = (id: DSNPUserURI, options?: Partial<ActivityContentMention>): ActivityContentMention => ({
+export const createMention = (
+  id: DSNPUserURI,
+  options?: Partial<ActivityContentMention>
+): ActivityContentMention => ({
   type: "Mention",
   id,
   ...options,

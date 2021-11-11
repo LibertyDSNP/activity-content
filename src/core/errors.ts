@@ -5,7 +5,7 @@
  */
 export class ActivityContentError extends Error {
   constructor(message: string) {
-    super(`Activity Content Error: ${message}`)
+    super(`Activity Content Error: ${message}`);
     this.name = this.constructor.name;
   }
 }

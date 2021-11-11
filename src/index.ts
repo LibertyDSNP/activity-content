@@ -12,5 +12,5 @@ import * as coreImport from "./core";
 export const core = coreImport;
 
 export default {
-    ...core,
-}
+  ...core,
+};

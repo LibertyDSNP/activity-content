@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+      "target": "esnext"
+    },
+    "extends": "./tsconfig",
+    "exclude": ["node_modules/**"]
+  }
+  
