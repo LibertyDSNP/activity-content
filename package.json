@@ -14,6 +14,11 @@
     "ts-types": "tsc --emitDeclarationOnly --outDir ./dist/types",
     "build": "mkdir -p ./dist/types/ && esbuild --format=cjs ./src/index.ts src/core/index.ts --bundle --outdir=./dist --outbase=src && npm run ts-types",
     "clean": "rm -Rf dist ./*.d.ts ./*.js ./*.tgz",
+    "pre-publish": "cp package.json dist",
+    "pub": "cd dist & npm publish",
+    "postpub": "cd dist & del package.json",
+    "pack": "npm run pre-publish && cd dist && npm pack && mv *.tgz ../",
+
     "test": "jest --runInBand"
   },
   "author": "",
