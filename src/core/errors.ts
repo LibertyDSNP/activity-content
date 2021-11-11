@@ -1,6 +1,7 @@
 /**
- * ActivityContentError indicates that an error occurred in the activity content
- * module.
+ * ActivityContentError is a base class for other errors in the Activity Content package. All errors thrown
+ * extending this class can be assumed to have originated in the Activity Content package, not
+ * in any underlying adapters or higher level client code.
  */
 export class ActivityContentError extends Error {
   constructor(message: string) {

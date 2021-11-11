@@ -14,11 +14,15 @@
     "ts-types": "tsc --emitDeclarationOnly --outDir ./dist/types",
     "build": "mkdir -p ./dist/types/ && esbuild --format=cjs ./src/index.ts src/core/index.ts --bundle --outdir=./dist --outbase=src && npm run ts-types",
     "clean": "rm -Rf dist ./*.d.ts ./*.js ./*.tgz",
+    "doc": "rm -Rf dist/docs && npm run doc:markdown",
+    "doc:html": "typedoc --options ./typedoc.json --plugin none --theme default --out dist/docs",
+    "doc:config": "typedoc --showConfig --options ./typedoc.json --plugin none --theme default --out dist/docs",
+    "doc:json": "typedoc --options ./typedoc.json --json dist/docs/typedoc.json",
+    "doc:markdown": "typedoc --options ./typedoc.json --theme markdown --out dist/docs",
     "pre-publish": "cp package.json dist",
     "pub": "cd dist & npm publish",
     "postpub": "cd dist & del package.json",
     "pack": "npm run pre-publish && cd dist && npm pack && mv *.tgz ../",
-
     "test": "jest --runInBand"
   },
   "author": "",
@@ -63,6 +67,8 @@
     "jest-junit": "^13.0.0",
     "ts-jest": "^27.0.7",
     "ts-node": "^10.4.0",
+    "typedoc": "^0.22.8",
+    "typedoc-plugin-markdown": "^3.11.3",
     "typescript": "^4.4.4"
   }
 }
