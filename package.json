@@ -25,7 +25,7 @@
     "pub": "cd dist & npm publish",
     "postpub": "cd dist & del package.json",
     "pack": "npm run pre-publish && cd dist && npm pack && mv *.tgz ../",
-    "test": "jest --runInBand"
+    "test": "jest --config ./jest.config.ts"
   },
   "author": "",
   "bugs": {
@@ -36,37 +36,10 @@
     "esbuild": "^0.13.13",
     "js-sha3": "^0.8.0"
   },
-  "jest": {
-    "setupFiles": [
-      "./jest.config.js"
-    ],
-    "reporters": [
-      "default",
-      "jest-junit"
-    ],
-    "globals": {
-      "ts-jest": {
-        "tsconfig": "tsconfig.json"
-      }
-    },
-    "testResultsProcessor": "jest-junit",
-    "moduleFileExtensions": [
-      "ts",
-      "js",
-      "json"
-    ],
-    "transform": {
-      "^.+\\.(ts|tsx)$": "ts-jest"
-    },
-    "testMatch": [
-      "**/*.test.(ts|js)"
-    ],
-    "testEnvironment": "node"
-  },
   "devDependencies": {
     "@types/jest": "^27.0.2",
-    "@typescript-eslint/eslint-plugin": "4.29.2",
-    "@typescript-eslint/parser": "4.29.2",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-const-case": "^1.2.2",
