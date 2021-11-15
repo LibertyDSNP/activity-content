@@ -8,9 +8,17 @@
  *   - `import { foo } from "@dsnp/activity-content";`
  *   - `import foo from "@dsnp/activity-content/foo";`
  */
-import * as coreImport from "./core";
-export const core = coreImport;
+import * as factoriesImport from "./core/factories";
+export const factories = factoriesImport;
+
+import * as errorsImport from "./core/errors";
+export const errors = errorsImport;
+
+import * as validationImport from "./core/validation";
+export const validation = validationImport;
 
 export default {
-  ...core,
+  factories,
+  errors,
+  validation,
 };

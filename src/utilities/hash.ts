@@ -6,4 +6,4 @@ import { HexString } from "./types";
  * @param content - The string content to hash
  * @returns A 0x prefixed keccak256 hash
  */
- export const hash = (content: Message): HexString => `0x${keccak256(content)}`;
+export const hash = (content: Message): HexString => `0x${keccak256(content)}`;
