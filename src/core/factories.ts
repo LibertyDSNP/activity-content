@@ -1,4 +1,5 @@
-import { DSNPUserURI, hash } from "../utilities/types";
+import { DSNPUserURI } from "../utilities/types";
+import { hash } from "../utilities/hash"
 
 interface ActivityContentBase {
   "@context": "https://www.w3.org/ns/activitystreams";
