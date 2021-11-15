@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/LibertyDSNP/activity-content.git"
   },
-  "license": "ISC",
+  "license": "Apache-2.0",
   "scripts": {
     "build:cjs": "tsc -p tsconfig.json",
     "ts-types": "tsc --emitDeclarationOnly --outDir ./dist/types",
