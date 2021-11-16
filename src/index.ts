@@ -8,6 +8,7 @@
  *   - `import { foo } from "@dsnp/activity-content";`
  *   - `import foo from "@dsnp/activity-content/foo";`
  */
+
 import * as factoriesImport from "./core/factories";
 export const factories = factoriesImport;
 

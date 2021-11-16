@@ -5,6 +5,9 @@
     ],
     "excludeExternals": true,
     "excludePrivate": true,
-    "excludeInternal": true
+    "excludeInternal": true,
+    "entryPointStrategy": "expand",
+    "exclude": ["**/*.test.ts"]
+
   }
   
