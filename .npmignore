@@ -5,6 +5,7 @@
 .github/ISSUE_TEMPLATE/DSNP_Enhancement.md
 .github/ISSUE_TEMPLATE/DSNP_Issue.md
 .github/PULL_REQUEST_TEMPLATE.md
+.idea/activity-content.iml
 .node-version
 jest.config.ts
 src/core/errors.ts

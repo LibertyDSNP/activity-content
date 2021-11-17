@@ -2,3 +2,4 @@ node_modules/
 dist
 /*.d.ts
 *.xml
+.idea/activity-content.iml
