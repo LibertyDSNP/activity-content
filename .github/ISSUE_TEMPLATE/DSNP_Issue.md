@@ -1,6 +1,6 @@
 ---
-    name: DSNP Issue
-    about: Report an issue found in the DSNP
+    name: Activity Content Issue
+    about: Report an issue found in the Activity Content Package
     title: ""
     labels: "bug"
     assignees: ""

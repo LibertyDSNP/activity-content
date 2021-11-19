@@ -1,7 +1,7 @@
 ---
-    name: DSNP Enhancement
-    about: Suggest a DSNP improvement
-    title: "DSNPIP-# Descriptive Title Here"
+    name: Activity Content Enhancement
+    about: Suggest a Activity Content improvement
+    title: "ActivityContent-# Descriptive Title Here"
     labels: "enhancement"
     assignees: ""
 ---
@@ -15,7 +15,7 @@ _Detailed description of the enhancement and the motivation for it here_
 
 # Specification
 
-_Specific changes to the DSNP Spec here_
+_Specific changes to the Activity Content here_
 
 # Copyright
 
