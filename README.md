@@ -9,8 +9,10 @@ Install the Activity Content package with the following command:
 ### Usage
 Once the Activity Content package is installed, you can access the functions like in the given example
 
-`const activityContent = require("@dsnp/activity-content")`
-`const hashTag = activityContent.core.factories.createHashTag("Earth")`
+``` javascript
+const activityContent = require("@dsnp/activity-content")
+const hashTag = activityContent.factories.createHashTag("Earth")
+```
 
 ### Documentation
 
@@ -18,9 +20,9 @@ Once the Activity Content package is installed, you can access the functions lik
 Run `npm run build`
 
 ### How to Compile Documentation
-- Run `npm run doc` for HTML documentation
+- Run `npm run doc` for markdown documentation
+- Run `npm run doc:html` for HTML documentation
 - Run `npm run doc:json` for JSON documentation
-- Run `npm run doc:markdown` for markdown documentation (published with the npm package)
 
 ### Testing
 To run tests, run `npm run test`
