@@ -1,10 +1,10 @@
-import * as factoriesImport from "./core/factories";
+import * as factoriesImport from "./factories";
 export const factories = factoriesImport;
 
-import * as errorsImport from "./core/errors";
+import * as errorsImport from "./errors";
 export const errors = errorsImport;
 
-import * as validationImport from "./core/validation";
+import * as validationImport from "./validation";
 export const validation = validationImport;
 
 export default {

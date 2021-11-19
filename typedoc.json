@@ -1,13 +1,12 @@
 {
     "entryPoints": [
-      "./src/index.ts",
-      "./src/core"
+      "./src"
     ],
     "excludeExternals": true,
     "excludePrivate": true,
     "excludeInternal": true,
     "entryPointStrategy": "expand",
-    "exclude": ["**/*.test.ts"]
+    "exclude": ["**/*.test.ts", "**/index.ts", "**/utilities/*"]
 
   }
   

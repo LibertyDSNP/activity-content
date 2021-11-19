@@ -15,13 +15,13 @@ import {
   ActivityContentMention,
   ActivityContentLocation,
 } from "./factories";
-import { DSNPUserURI } from "../utilities/types";
+import { DSNPUserURI } from "./utilities/types";
 import {
   isRecord,
   isString,
   isNumber,
   isArrayOfType,
-} from "../utilities/validation";
+} from "./utilities/validation";
 import { InvalidActivityContentError } from "./errors";
 
 /**
