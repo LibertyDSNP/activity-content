@@ -3,16 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
-  "types": "dist/types/index.d.ts",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LibertyDSNP/activity-content.git"
   },
   "license": "Apache-2.0",
   "scripts": {
-    "build:cjs": "tsc -p tsconfig.json",
-    "ts-types": "tsc --emitDeclarationOnly --outDir ./dist/types",
-    "build": "mkdir -p ./dist/types/ && esbuild --format=cjs ./src/index.ts --bundle --outdir=./dist --outbase=src && npm run ts-types",
+    "build": "tsc -p tsconfig.json",
     "clean": "rm -Rf dist ./*.d.ts ./*.js ./*.tgz",
     "doc": "rm -Rf dist/docs && npm run doc:markdown",
     "doc:html": "typedoc --options ./typedoc.json --plugin none --theme default --out dist/docs",
