@@ -1,0 +1,10 @@
+.eslintignore
+.eslintrc
+.github
+.idea
+.node-version
+jest.config.ts
+src
+tsconfig.eslint.json
+tsconfig.json
+typedoc.json

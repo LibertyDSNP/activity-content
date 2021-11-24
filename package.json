@@ -1,0 +1,58 @@
+{
+  "name": "@dsnp/activity-content",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LibertyDSNP/activity-content.git"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "run-s clean doc:markdown build:cjs build:package build:copy",
+    "build:cjs": "tsc -p tsconfig.json",
+    "build:package": "node scripts/package.js",
+    "build:copy": "cp CONTRIBUTING.md CHANGELOG.md README.md LICENSE ./dist",
+    "pack": "npm run build && cd dist && npm pack && mv *.tgz ../",
+    "clean": "rm -Rf dist ./*.tgz",
+    "doc": "rm -Rf dist/docs && npm run doc:markdown",
+    "doc:html": "typedoc --options ./typedoc.json --plugin none --theme default --out dist/docs",
+    "doc:config": "typedoc --showConfig --options ./typedoc.json --plugin none --theme default --out dist/docs",
+    "doc:json": "typedoc --options ./typedoc.json --json dist/docs/typedoc.json",
+    "doc:markdown": "typedoc --options ./typedoc.json --theme markdown --out dist/docs",
+    "format": "eslint \"**/*.{js,ts}\" --fix",
+    "lint": "eslint \"**/*.{js,ts}\"",
+    "test": "jest --config ./jest.config.ts"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/LibertyDSNP/activity-content/issues"
+  },
+  "homepage": "https://github.com/LibertyDSNP/activity-content#readme",
+  "dependencies": {
+    "js-sha3": "^0.8.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "esbuild": "^0.13.14",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-const-case": "^1.2.2",
+    "eslint-plugin-jest": "24.4.0",
+    "eslint-plugin-jsdoc": "^36.0.7",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-tsdoc": "^0.2.14",
+    "jest": "^27.3.1",
+    "jest-junit": "^13.0.0",
+    "npm-run-all": "4.1.5",
+    "prettier": "^2.4.1",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "typedoc": "^0.22.8",
+    "typedoc-plugin-markdown": "^3.11.3",
+    "typescript": "^4.4.4"
+  }
+}
