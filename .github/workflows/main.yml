@@ -57,5 +57,14 @@ jobs:
       - name: Pack up for testing project import
         run: |
           npm pack
-          mv dsnp-sdk-*.tgz ../dsnp-activity-content.tgz
+          mv dsnp-activity-content-*.tgz ../dsnp-activity-content.tgz
         working-directory: ./main/dist
+
+      #     This needs to happen in a non-subfolder of the sdk to prevent resolving from a parent dir node_modules
+      - name: Test Project Import
+        run: |
+          cp -r ./main/src/importTest ./
+          cd importTest
+          npm i ../main/dsnp-activity-content.tgz
+          npm test
+          
