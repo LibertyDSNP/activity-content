@@ -57,5 +57,5 @@ jobs:
       - name: Pack up for testing project import
         run: |
           npm pack
-          mv dsnp-sdk-*.tgz ../dsnp-sdk.tgz
+          mv dsnp-sdk-*.tgz ../dsnp-activity-content.tgz
         working-directory: ./main/dist
