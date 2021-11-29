@@ -1,0 +1,61 @@
+name: Tests CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ '**' ]
+jobs:
+  test:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout Activity Content
+        uses: actions/checkout@v2
+        with:
+          path: main
+
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.15.5'
+
+      - name: Update npm to v7
+        run: npm i -g npm
+
+      - name: Install
+        run: npm ci
+        working-directory: ./main
+
+      - name: Lint
+        run: npm run lint
+        working-directory: ./main
+
+      - name: Danger
+        run: npx danger ci --dangerfile ./dangerfile.ts
+        working-directory: ./main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Test
+        run: npm run test
+        working-directory: ./main
+
+      - name: Build
+        run: npm run build
+        working-directory: ./main
+
+      - name: Publish Dry Run
+        run: npm publish --dry-run
+        working-directory: ./main/dist
+
+      - name: Pack up for testing project import
+        run: |
+          npm pack
+          mv dsnp-sdk-*.tgz ../dsnp-sdk.tgz
+        working-directory: ./main/dist
