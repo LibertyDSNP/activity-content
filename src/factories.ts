@@ -239,7 +239,7 @@ export const createAudioAttachment = (
  * object.
  *
  * @param href      - The URL of the file
- * @param mediaType - The MIME type of the file
+ * @param mediaType - The MIME type of the file (see SUPPORTED_AUDIO_MEDIA_TYPES within validation.ts)
  * @param hash      - An ActivityContentHash object to authenticate the file
  * @param options - Overrides any default fields for the ActivityContentAudioLink
  * @returns An ActivityContentAudioLink object
@@ -280,7 +280,7 @@ export const createImageAttachment = (
  * object.
  *
  * @param href      - The URL of the file
- * @param mediaType - The MIME type of the file
+ * @param mediaType - The MIME type of the file (see SUPPORTED_IMAGE_MEDIA_TYPES within validation.ts)
  * @param hash      - An ActivityContentHash object to authenticate the file
  * @param options - Overrides any default fields for the ActivityContentImageLink
  * @returns An ActivityContentImageLink object
@@ -321,7 +321,7 @@ export const createVideoAttachment = (
  * object.
  *
  * @param href      - The URL of the file
- * @param mediaType - The MIME type of the file
+ * @param mediaType - The MIME type of the file (see SUPPORTED_VIDEO_MEDIA_TYPES within validation.ts)
  * @param hash      - An ActivityContentHash object to authenticate the file
  * @param options - Overrides any default fields for the ActivityContentVideoLink
  * @returns An ActivityContentVideoLink object
