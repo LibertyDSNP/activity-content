@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased
+- Changed mime types audio and image to match the spec
 
 ## [1.0.0] - 2021-11-24
 ### Added
