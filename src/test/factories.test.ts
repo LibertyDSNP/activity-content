@@ -12,7 +12,7 @@ import {
   createHashtag,
   createMention,
   createHash,
-} from "./factories";
+} from "../factories";
 
 describe("activityPub", () => {
   describe("createNote", () => {
