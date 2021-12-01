@@ -21,6 +21,10 @@ rootPackage["main"] = "index.js";
 rootPackage["types"] = "index.d.ts";
 
 // Write it out
-fs.writeFileSync(`${path.join(__dirname, "../dist", "package.json")}`, JSON.stringify(rootPackage, null, 2), (err) => {
-  if (err) throw new Error(err);
-});
+fs.writeFileSync(
+  `${path.join(__dirname, "../dist", "package.json")}`,
+  JSON.stringify(rootPackage, null, 2),
+  (err) => {
+    if (err) throw new Error(err);
+  }
+);
