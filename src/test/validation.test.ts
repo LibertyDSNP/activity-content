@@ -2,7 +2,7 @@ import {
   ActivityContentAttachment,
   ActivityContentNote,
   ActivityContentProfile,
-} from "./factories";
+} from "../factories";
 import {
   isActivityContentProfileType,
   isActivityContentNoteType,
@@ -11,7 +11,7 @@ import {
   requireValidActivityContentNote,
   requireValidActivityContentProfile,
   requireGetSupportedContentAttachments,
-} from "./validation";
+} from "../validation";
 
 describe("activity content validations", () => {
   const consoleError = console.error;

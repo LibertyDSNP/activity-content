@@ -8,3 +8,4 @@ src
 tsconfig.eslint.json
 tsconfig.json
 typedoc.json
+dangerfile.ts
