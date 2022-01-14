@@ -410,7 +410,15 @@ export const createMention = (
  * @param content - The file content to be hashed
  * @returns An ActivityContentHash containing the keccak256 proof of the content
  */
-export const createHash = (content: string): ActivityContentHash => ({
+export const createHashWithContent = (content: string | Uint8Array): ActivityContentHash => ({
   algorithm: "keccak256",
   value: hash(content),
 });
+
+// Current iteration of creating an ActivityContentHash when given a valid keccak256 hash value
+export const createHashWithValue = (hash: string): ActivityContentHash => ({
+  algorithm: "keccak256",
+  value: hash,
+});
+
+
