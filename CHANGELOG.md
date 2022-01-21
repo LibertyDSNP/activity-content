@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased
+- Updated placeholder value in LICENSE
 - Changed mime types audio and image to match the spec
 - Set Up Tests with Github Actions
 
