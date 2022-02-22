@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased
+- Copied Npm release workflow [DSNP-SDK](https://github.com/LibertyDSNP/sdk-ts/tree/main/.github/workflows)
 - Updated placeholder value in LICENSE
 - Changed mime types audio and image to match the spec
 - Set Up Tests with Github Actions
