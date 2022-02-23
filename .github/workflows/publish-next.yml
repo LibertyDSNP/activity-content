@@ -1,7 +1,6 @@
 name: Publish NPM @next
 on:
   push:
-    branches: [ main ]
 jobs:
   publish-to-npm-next:
     runs-on: ubuntu-20.04

@@ -1,7 +1,6 @@
 name: Release Package
 on:
-  release:
-    types: [released]
+  push:
 jobs:
   publish-to-npm:
     runs-on: ubuntu-20.04
