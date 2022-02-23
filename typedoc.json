@@ -1,0 +1,3733 @@
+{
+	"id": 0,
+	"name": "@dsnp/activity-content",
+	"kind": 1,
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 1,
+			"name": "errors",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 2,
+					"name": "ActivityContentError",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {},
+					"comment": {
+						"shortText": "ActivityContentError is a base class for other errors in the Activity Content package. All errors thrown\nextending this class can be assumed to have originated in the Activity Content package, not\nin any underlying adapters or higher level client code."
+					},
+					"children": [
+						{
+							"id": 3,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "errors.ts",
+									"line": 7,
+									"character": 2
+								}
+							],
+							"signatures": [
+								{
+									"id": 4,
+									"name": "new ActivityContentError",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 5,
+											"name": "message",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 2,
+										"name": "ActivityContentError"
+									},
+									"overwrites": {
+										"type": "reference",
+										"name": "Error.constructor"
+									}
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"name": "Error.constructor"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								3
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "errors.ts",
+							"line": 6,
+							"character": 13
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "Error"
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"id": 6,
+							"name": "InvalidActivityContentError"
+						}
+					]
+				},
+				{
+					"id": 6,
+					"name": "InvalidActivityContentError",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {},
+					"comment": {
+						"shortText": "InvalidActivityContentError indicates that an activity content object failed\nto pass validation."
+					},
+					"children": [
+						{
+							"id": 7,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "errors.ts",
+									"line": 18,
+									"character": 2
+								}
+							],
+							"signatures": [
+								{
+									"id": 8,
+									"name": "new InvalidActivityContentError",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 9,
+											"name": "message",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 6,
+										"name": "InvalidActivityContentError"
+									},
+									"overwrites": {
+										"type": "reference",
+										"id": 4,
+										"name": "ActivityContentError.constructor"
+									}
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"id": 3,
+								"name": "ActivityContentError.constructor"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								7
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "errors.ts",
+							"line": 17,
+							"character": 13
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"id": 2,
+							"name": "ActivityContentError"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						2,
+						6
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "errors.ts",
+					"line": 6,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 10,
+			"name": "factories",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 47,
+					"name": "ActivityContentAudio",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"comment": {
+						"shortText": "ActivityContentAudio represents an audio clip attached to an\nActivityContentNote. ActivityContentAudio objects contain an array of\nActivityContentAudioLinks with different versions of the same content. For\nexample, a single item of audio content may be available in multiple formats,\nsuch as OGG or MP3, which may be included as individual\nActivityContentAudioLink objects. The semantic content of each file should\nalways be identical."
+					},
+					"children": [
+						{
+							"id": 51,
+							"name": "duration",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 96,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 50,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 95,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 48,
+							"name": "type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 93,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": "Audio"
+							}
+						},
+						{
+							"id": 49,
+							"name": "url",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 94,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 65,
+									"name": "ActivityContentAudioLink"
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								51,
+								50,
+								48,
+								49
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 92,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 65,
+					"name": "ActivityContentAudioLink",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"comment": {
+						"shortText": "ActivityContentAudioLink represents a specific audio file included in an\nActivityContentAudio object."
+					},
+					"children": [
+						{
+							"id": 67,
+							"name": "hash",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 150,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 87,
+									"name": "ActivityContentHash"
+								}
+							}
+						},
+						{
+							"id": 69,
+							"name": "href",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 140,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 63,
+								"name": "ActivityContentLink.href"
+							}
+						},
+						{
+							"id": 66,
+							"name": "mediaType",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 149,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 70,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 141,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 64,
+								"name": "ActivityContentLink.name"
+							}
+						},
+						{
+							"id": 68,
+							"name": "type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 139,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": "Link"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 62,
+								"name": "ActivityContentLink.type"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								67,
+								69,
+								66,
+								70,
+								68
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 148,
+							"character": 17
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"id": 61,
+							"name": "ActivityContentLink"
+						}
+					]
+				},
+				{
+					"id": 87,
+					"name": "ActivityContentHash",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"comment": {
+						"shortText": "ActivtyContentHash represents a hash included in the hash field of an\nActivityContentAudioLink, ActivityContentImageLink or\nActivityContentVideoLink object to prove it's authenticity."
+					},
+					"children": [
+						{
+							"id": 88,
+							"name": "algorithm",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 181,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 89,
+							"name": "value",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 182,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								88,
+								89
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 180,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 40,
+					"name": "ActivityContentHashtag",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"comment": {
+						"shortText": "ActivityContentHashtag represents a hashtag associated with an\nActivityContentNote or an ActivityContentProfile."
+					},
+					"children": [
+						{
+							"id": 41,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 60,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								41
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 59,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 52,
+					"name": "ActivityContentImage",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"comment": {
+						"shortText": "ActivityContentImage represents an image file attached to an\nActivityContentNote. ActivityContentImage objects contain an array of\nActivityContentImageLinks with different versions of the same content. For\nexample, a single picture may be available in multiple formats, such as JPEG\nor PNG, which may be included as individual ActivityContentImageLink\nobjects. The height and width of the included ActivityContentImageLink\nobjects may also vary to provide faster loading on different screen size\ndevices. The semantic content of each file should always be identical."
+					},
+					"children": [
+						{
+							"id": 55,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 112,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 53,
+							"name": "type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 110,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": "Image"
+							}
+						},
+						{
+							"id": 54,
+							"name": "url",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 111,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 71,
+									"name": "ActivityContentImageLink"
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								55,
+								53,
+								54
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 109,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 71,
+					"name": "ActivityContentImageLink",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"comment": {
+						"shortText": "ActivityContentImageLink represents a specific image file included in an\nActivityContentImage object."
+					},
+					"children": [
+						{
+							"id": 73,
+							"name": "hash",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 159,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 87,
+									"name": "ActivityContentHash"
+								}
+							}
+						},
+						{
+							"id": 74,
+							"name": "height",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 160,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 77,
+							"name": "href",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 140,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 63,
+								"name": "ActivityContentLink.href"
+							}
+						},
+						{
+							"id": 72,
+							"name": "mediaType",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 158,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 78,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 141,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 64,
+								"name": "ActivityContentLink.name"
+							}
+						},
+						{
+							"id": 76,
+							"name": "type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 139,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": "Link"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 62,
+								"name": "ActivityContentLink.type"
+							}
+						},
+						{
+							"id": 75,
+							"name": "width",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 161,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								73,
+								74,
+								77,
+								72,
+								78,
+								76,
+								75
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 157,
+							"character": 17
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"id": 61,
+							"name": "ActivityContentLink"
+						}
+					]
+				},
+				{
+					"id": 61,
+					"name": "ActivityContentLink",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"comment": {
+						"shortText": "ActivityContentLink represents a link attached to an ActivityContentNote.\nUnlike ActivityContentAudio, ActivityContentImage and ActivityContentVideo\nobjects, link objects may point to dynamic content, such as a news article,\nwhich should not be hashed to prove their authenticity."
+					},
+					"children": [
+						{
+							"id": 63,
+							"name": "href",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 140,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 64,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 141,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 62,
+							"name": "type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 139,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": "Link"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								63,
+								64,
+								62
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 138,
+							"character": 17
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"id": 65,
+							"name": "ActivityContentAudioLink"
+						},
+						{
+							"type": "reference",
+							"id": 71,
+							"name": "ActivityContentImageLink"
+						},
+						{
+							"type": "reference",
+							"id": 79,
+							"name": "ActivityContentVideoLink"
+						}
+					]
+				},
+				{
+					"id": 30,
+					"name": "ActivityContentLocation",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"comment": {
+						"shortText": "ActivityContentLocation represents location data associated with an\nActivityContentNote or ActivtyContentProfile."
+					},
+					"children": [
+						{
+							"id": 33,
+							"name": "accuracy",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 39,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 34,
+							"name": "altitude",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 40,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 35,
+							"name": "latitude",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 41,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 36,
+							"name": "longitude",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 42,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 32,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 38,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 37,
+							"name": "radius",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 43,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 31,
+							"name": "type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 37,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": "Place"
+							}
+						},
+						{
+							"id": 38,
+							"name": "units",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 44,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								33,
+								34,
+								35,
+								36,
+								32,
+								37,
+								31,
+								38
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 36,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 42,
+					"name": "ActivityContentMention",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"comment": {
+						"shortText": "ActivityContentMention represents a mention associated with an\nActivityContentNote or an ActivityContentProfile."
+					},
+					"children": [
+						{
+							"id": 44,
+							"name": "id",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 69,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 45,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 70,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 43,
+							"name": "type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 68,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": "Mention"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								44,
+								45,
+								43
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 67,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 11,
+					"name": "ActivityContentNote",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"comment": {
+						"shortText": "ActivityContentNote represents a post created by the user."
+					},
+					"children": [
+						{
+							"id": 16,
+							"name": "@context",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 5,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": "https://www.w3.org/ns/activitystreams"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "ActivityContentBase.@context"
+							}
+						},
+						{
+							"id": 15,
+							"name": "attachment",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 20,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 46,
+									"name": "ActivityContentAttachment"
+								}
+							}
+						},
+						{
+							"id": 14,
+							"name": "content",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 19,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 19,
+							"name": "location",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 9,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 30,
+								"name": "ActivityContentLocation"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "ActivityContentBase.location"
+							}
+						},
+						{
+							"id": 13,
+							"name": "mediaType",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 18,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": "text/plain"
+							}
+						},
+						{
+							"id": 17,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 7,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "ActivityContentBase.name"
+							}
+						},
+						{
+							"id": 18,
+							"name": "published",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 8,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "ActivityContentBase.published"
+							}
+						},
+						{
+							"id": 20,
+							"name": "tag",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 10,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"id": 39,
+										"name": "ActivityContentTag"
+									},
+									{
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"id": 39,
+											"name": "ActivityContentTag"
+										}
+									}
+								]
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "ActivityContentBase.tag"
+							}
+						},
+						{
+							"id": 12,
+							"name": "type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 17,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": "Note"
+							},
+							"overwrites": {
+								"type": "reference",
+								"name": "ActivityContentBase.type"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								16,
+								15,
+								14,
+								19,
+								13,
+								17,
+								18,
+								20,
+								12
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 16,
+							"character": 17
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "ActivityContentBase"
+						}
+					]
+				},
+				{
+					"id": 21,
+					"name": "ActivityContentProfile",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"comment": {
+						"shortText": "ActivityContentProfile represents profile data for the posting user."
+					},
+					"children": [
+						{
+							"id": 25,
+							"name": "@context",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 5,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": "https://www.w3.org/ns/activitystreams"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "ActivityContentBase.@context"
+							}
+						},
+						{
+							"id": 24,
+							"name": "icon",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 29,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 71,
+									"name": "ActivityContentImageLink"
+								}
+							}
+						},
+						{
+							"id": 28,
+							"name": "location",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 9,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 30,
+								"name": "ActivityContentLocation"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "ActivityContentBase.location"
+							}
+						},
+						{
+							"id": 26,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 7,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "ActivityContentBase.name"
+							}
+						},
+						{
+							"id": 27,
+							"name": "published",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 8,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "ActivityContentBase.published"
+							}
+						},
+						{
+							"id": 23,
+							"name": "summary",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 28,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 29,
+							"name": "tag",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 10,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"id": 39,
+										"name": "ActivityContentTag"
+									},
+									{
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"id": 39,
+											"name": "ActivityContentTag"
+										}
+									}
+								]
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "ActivityContentBase.tag"
+							}
+						},
+						{
+							"id": 22,
+							"name": "type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 27,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": "Profile"
+							},
+							"overwrites": {
+								"type": "reference",
+								"name": "ActivityContentBase.type"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								25,
+								24,
+								28,
+								26,
+								27,
+								23,
+								29,
+								22
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 26,
+							"character": 17
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "ActivityContentBase"
+						}
+					]
+				},
+				{
+					"id": 56,
+					"name": "ActivityContentVideo",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"comment": {
+						"shortText": "ActivityContentVideo represents an video file attached to an\nActivityContentNote. ActivityContentVideoLink objects contain an array of\nActivityContentVideoLinks with different versions of the same content. For\nexample, a single video may be available in multiple formats, such as MPEG\nor MKV, which may be included as individual ActivityContentVideoLink\nobjects. The height and width of the included ActivityContentVideoLink\nobjects may also vary to provide faster loading on different screen size\ndevices. The semantic content of each file should always be identical."
+					},
+					"children": [
+						{
+							"id": 60,
+							"name": "duration",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 129,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 59,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 128,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 57,
+							"name": "type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 126,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": "Video"
+							}
+						},
+						{
+							"id": 58,
+							"name": "url",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 127,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 79,
+									"name": "ActivityContentVideoLink"
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								60,
+								59,
+								57,
+								58
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 125,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 79,
+					"name": "ActivityContentVideoLink",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"comment": {
+						"shortText": "ActivityContentVideoLink represents a specific video file included in an\nActivityContentVideo object."
+					},
+					"children": [
+						{
+							"id": 81,
+							"name": "hash",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 170,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 87,
+									"name": "ActivityContentHash"
+								}
+							}
+						},
+						{
+							"id": 82,
+							"name": "height",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 171,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 85,
+							"name": "href",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 140,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 63,
+								"name": "ActivityContentLink.href"
+							}
+						},
+						{
+							"id": 80,
+							"name": "mediaType",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 169,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 86,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 141,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 64,
+								"name": "ActivityContentLink.name"
+							}
+						},
+						{
+							"id": 84,
+							"name": "type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 139,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": "Link"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 62,
+								"name": "ActivityContentLink.type"
+							}
+						},
+						{
+							"id": 83,
+							"name": "width",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "factories.ts",
+									"line": 172,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								81,
+								82,
+								85,
+								80,
+								86,
+								84,
+								83
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 168,
+							"character": 17
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"id": 61,
+							"name": "ActivityContentLink"
+						}
+					]
+				},
+				{
+					"id": 46,
+					"name": "ActivityContentAttachment",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {},
+					"comment": {
+						"shortText": "ActivityContentAttachment represents a piece of external content associated\nwith an ActivityContentNote, such as a picture, video, audio clip or website."
+					},
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 77,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"id": 47,
+								"name": "ActivityContentAudio"
+							},
+							{
+								"type": "reference",
+								"id": 52,
+								"name": "ActivityContentImage"
+							},
+							{
+								"type": "reference",
+								"id": 56,
+								"name": "ActivityContentVideo"
+							},
+							{
+								"type": "reference",
+								"id": 61,
+								"name": "ActivityContentLink"
+							}
+						]
+					}
+				},
+				{
+					"id": 39,
+					"name": "ActivityContentTag",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {},
+					"comment": {
+						"shortText": "ActivityContentTag is either an ActivityContentHashtag or an\nActivityContentMention."
+					},
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 51,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"id": 40,
+								"name": "ActivityContentHashtag"
+							},
+							{
+								"type": "reference",
+								"id": 42,
+								"name": "ActivityContentMention"
+							}
+						]
+					}
+				},
+				{
+					"id": 97,
+					"name": "createAudioAttachment",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 227,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 98,
+							"name": "createAudioAttachment",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "createAudioAttachment() provides a simple factory for generating an\nActivityContentAudio object.",
+								"returns": "An ActivityContentAudio object\n"
+							},
+							"parameters": [
+								{
+									"id": 99,
+									"name": "links",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "An array of ActivityContentAudioLink objects to include"
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"id": 65,
+											"name": "ActivityContentAudioLink"
+										}
+									}
+								},
+								{
+									"id": 100,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"shortText": "Overrides any default fields for the ActivityContentAudio"
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 47,
+												"name": "ActivityContentAudio"
+											}
+										],
+										"name": "Partial"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 47,
+								"name": "ActivityContentAudio"
+							}
+						}
+					]
+				},
+				{
+					"id": 101,
+					"name": "createAudioLink",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 247,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 102,
+							"name": "createAudioLink",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "createAudioLink() provides a simple factory for generation an\nActivityContentAudioLink object for inclusion in an ActivityContentAudio\nobject.",
+								"returns": "An ActivityContentAudioLink object\n"
+							},
+							"parameters": [
+								{
+									"id": 103,
+									"name": "href",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The URL of the file"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 104,
+									"name": "mediaType",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The MIME type of the file (see SUPPORTED_AUDIO_MEDIA_TYPES within validation.ts)"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 105,
+									"name": "hash",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "An ActivityContentHash object to authenticate the file"
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"id": 87,
+											"name": "ActivityContentHash"
+										}
+									}
+								},
+								{
+									"id": 106,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"shortText": "Overrides any default fields for the ActivityContentAudioLink"
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 65,
+												"name": "ActivityContentAudioLink"
+											}
+										],
+										"name": "Partial"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 65,
+								"name": "ActivityContentAudioLink"
+							}
+						}
+					]
+				},
+				{
+					"id": 142,
+					"name": "createHash",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 413,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 143,
+							"name": "createHash",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "createHash() provides a simple factory for generating an ActivityContentHash\nobject. This factory assumes the user intends to use a standard Keccak256\nhash. To use other authentication algorithms, users should build their own\nActivityContentHash objects.",
+								"returns": "An ActivityContentHash containing the keccak256 proof of the content\n"
+							},
+							"parameters": [
+								{
+									"id": 144,
+									"name": "content",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The file content to be hashed"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 87,
+								"name": "ActivityContentHash"
+							}
+						}
+					]
+				},
+				{
+					"id": 135,
+					"name": "createHashtag",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 383,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 136,
+							"name": "createHashtag",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "createHashtag() provides a simple factory for generating an\nActivityContentHashtag object.",
+								"returns": "An ActivityContentTag object\n"
+							},
+							"parameters": [
+								{
+									"id": 137,
+									"name": "name",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The hashtag value, without \"#\" character"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 40,
+								"name": "ActivityContentHashtag"
+							}
+						}
+					]
+				},
+				{
+					"id": 107,
+					"name": "createImageAttachment",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 268,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 108,
+							"name": "createImageAttachment",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "createImageAttachment() provides a simple factory for generating an\nActivityContentImage object.",
+								"returns": "An ActivityContentImage object\n"
+							},
+							"parameters": [
+								{
+									"id": 109,
+									"name": "links",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "An array of ActivityContentImageLink objects to include"
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"id": 71,
+											"name": "ActivityContentImageLink"
+										}
+									}
+								},
+								{
+									"id": 110,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"shortText": "Overrides any default fields for the ActivityContentImage"
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 52,
+												"name": "ActivityContentImage"
+											}
+										],
+										"name": "Partial"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 52,
+								"name": "ActivityContentImage"
+							}
+						}
+					]
+				},
+				{
+					"id": 111,
+					"name": "createImageLink",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 288,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 112,
+							"name": "createImageLink",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "createImageLink() provides a simple factory for generation an\nActivityContentImageLink object for inclusion in an ActivityContentImage\nobject.",
+								"returns": "An ActivityContentImageLink object\n"
+							},
+							"parameters": [
+								{
+									"id": 113,
+									"name": "href",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The URL of the file"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 114,
+									"name": "mediaType",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The MIME type of the file (see SUPPORTED_IMAGE_MEDIA_TYPES within validation.ts)"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 115,
+									"name": "hash",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "An ActivityContentHash object to authenticate the file"
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"id": 87,
+											"name": "ActivityContentHash"
+										}
+									}
+								},
+								{
+									"id": 116,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"shortText": "Overrides any default fields for the ActivityContentImageLink"
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 71,
+												"name": "ActivityContentImageLink"
+											}
+										],
+										"name": "Partial"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 71,
+								"name": "ActivityContentImageLink"
+							}
+						}
+					]
+				},
+				{
+					"id": 127,
+					"name": "createLinkAttachment",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 350,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 128,
+							"name": "createLinkAttachment",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "createLinkAttachment() provides a simple factory for generating an\nActivityContentLink object.",
+								"returns": "An ActivityContentLink object\n"
+							},
+							"parameters": [
+								{
+									"id": 129,
+									"name": "href",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The URL to include in the link"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 130,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"shortText": "Overrides any default fields for the ActivityContentLink"
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 61,
+												"name": "ActivityContentLink"
+											}
+										],
+										"name": "Partial"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 61,
+								"name": "ActivityContentLink"
+							}
+						}
+					]
+				},
+				{
+					"id": 131,
+					"name": "createLocation",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 367,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 132,
+							"name": "createLocation",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "createLocation() provides a simple factory for generating an\nActivityContentLocation object.",
+								"returns": "An ActivityContentLocation object\n"
+							},
+							"parameters": [
+								{
+									"id": 133,
+									"name": "name",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "This is the string provided for name of the Location"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 134,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"shortText": "Overrides any default fields for the ActivityContentLocation"
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 30,
+												"name": "ActivityContentLocation"
+											}
+										],
+										"name": "Partial"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 30,
+								"name": "ActivityContentLocation"
+							}
+						}
+					]
+				},
+				{
+					"id": 138,
+					"name": "createMention",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 395,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 139,
+							"name": "createMention",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "createMention() provides a simple factory for generating an\nActivityContentMention object.",
+								"returns": "An ActivityContentMention object\n"
+							},
+							"parameters": [
+								{
+									"id": 140,
+									"name": "id",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The DSNPUserId of the mention user"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 141,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"shortText": "Any additional fields for the ActivityContentMention"
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 42,
+												"name": "ActivityContentMention"
+											}
+										],
+										"name": "Partial"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 42,
+								"name": "ActivityContentMention"
+							}
+						}
+					]
+				},
+				{
+					"id": 90,
+					"name": "createNote",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 193,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 91,
+							"name": "createNote",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "createNote() provides a simple factory for generating an ActivityContentNote\nobject.",
+								"returns": "An ActivityContentNote object\n"
+							},
+							"parameters": [
+								{
+									"id": 92,
+									"name": "content",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The text content to include in the note"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 93,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"shortText": "Overrides default fields for the ActivityContentNote"
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 11,
+												"name": "ActivityContentNote"
+											}
+										],
+										"name": "Partial"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 11,
+								"name": "ActivityContentNote"
+							}
+						}
+					]
+				},
+				{
+					"id": 94,
+					"name": "createProfile",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 211,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 95,
+							"name": "createProfile",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "createProfile() provides a simple factory for generating an\nActivityContentProfile object.",
+								"returns": "An ActivityContentProfile object\n"
+							},
+							"parameters": [
+								{
+									"id": 96,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"shortText": "Overrides any default fields for the ActivityContentProfile"
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 21,
+												"name": "ActivityContentProfile"
+											}
+										],
+										"name": "Partial"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 21,
+								"name": "ActivityContentProfile"
+							}
+						}
+					]
+				},
+				{
+					"id": 117,
+					"name": "createVideoAttachment",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 309,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 118,
+							"name": "createVideoAttachment",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "createVideoAttachment() provides a simple factory for generating an\nActivityContentVideo object.",
+								"returns": "An ActivityContentVideo object\n"
+							},
+							"parameters": [
+								{
+									"id": 119,
+									"name": "links",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "An array of ActivityContentVideoLink objects to include"
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"id": 79,
+											"name": "ActivityContentVideoLink"
+										}
+									}
+								},
+								{
+									"id": 120,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"shortText": "Overrides any default fields for the ActivityContentVideo"
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 56,
+												"name": "ActivityContentVideo"
+											}
+										],
+										"name": "Partial"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 56,
+								"name": "ActivityContentVideo"
+							}
+						}
+					]
+				},
+				{
+					"id": 121,
+					"name": "createVideoLink",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "factories.ts",
+							"line": 329,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 122,
+							"name": "createVideoLink",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "createVideoLink() provides a simple factory for generation an\nActivityContentVideoLink object for inclusion in an ActivityContentVideo\nobject.",
+								"returns": "An ActivityContentVideoLink object\n"
+							},
+							"parameters": [
+								{
+									"id": 123,
+									"name": "href",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The URL of the file"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 124,
+									"name": "mediaType",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The MIME type of the file (see SUPPORTED_VIDEO_MEDIA_TYPES within validation.ts)"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 125,
+									"name": "hash",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "An ActivityContentHash object to authenticate the file"
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"id": 87,
+											"name": "ActivityContentHash"
+										}
+									}
+								},
+								{
+									"id": 126,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"shortText": "Overrides any default fields for the ActivityContentVideoLink"
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 79,
+												"name": "ActivityContentVideoLink"
+											}
+										],
+										"name": "Partial"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 79,
+								"name": "ActivityContentVideoLink"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						47,
+						65,
+						87,
+						40,
+						52,
+						71,
+						61,
+						30,
+						42,
+						11,
+						21,
+						56,
+						79
+					]
+				},
+				{
+					"title": "Type aliases",
+					"kind": 4194304,
+					"children": [
+						46,
+						39
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						97,
+						101,
+						142,
+						135,
+						107,
+						111,
+						127,
+						131,
+						138,
+						90,
+						94,
+						117,
+						121
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "factories.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 145,
+			"name": "validation",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 155,
+					"name": "isActivityContentNoteType",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "validation.ts",
+							"line": 514,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 156,
+							"name": "isActivityContentNoteType",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "isActivityContentNoteType is a non-throwing version of `requireIsActivityContentNoteType`\nPerforms the same checks but catches InvalidActivityContentError and returns false instead.",
+								"returns": "a boolean - indicating if the object is an ActivityContentNote\n"
+							},
+							"parameters": [
+								{
+									"id": 157,
+									"name": "obj",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The object to check"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								}
+							],
+							"type": {
+								"type": "predicate",
+								"name": "obj",
+								"asserts": false,
+								"targetType": {
+									"type": "reference",
+									"id": 11,
+									"name": "ActivityContentNote"
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 161,
+					"name": "isActivityContentProfileType",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "validation.ts",
+							"line": 568,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 162,
+							"name": "isActivityContentProfileType",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "isActivityContentProfileType is a non-throwing version of `requireIsActivityContentProfileType`.\nPerforms the same checks but catches InvalidActivityContentError and returns false instead.",
+								"returns": "a boolean - indicating if the object is an ActivityContentProfile\n"
+							},
+							"parameters": [
+								{
+									"id": 163,
+									"name": "obj",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The object to check"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								}
+							],
+							"type": {
+								"type": "predicate",
+								"name": "obj",
+								"asserts": false,
+								"targetType": {
+									"type": "reference",
+									"id": 21,
+									"name": "ActivityContentProfile"
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 146,
+					"name": "isDSNPUserURI",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "validation.ts",
+							"line": 63,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 147,
+							"name": "isDSNPUserURI",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "isDSNPUserURI validates a given object as a DSNPUserURI.",
+								"returns": "True of false depending on whether the string is a valid DSNPUserURI\n"
+							},
+							"parameters": [
+								{
+									"id": 148,
+									"name": "uri",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The object to validate"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								}
+							],
+							"type": {
+								"type": "predicate",
+								"name": "uri",
+								"asserts": false,
+								"targetType": {
+									"type": "intrinsic",
+									"name": "string"
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 164,
+					"name": "requireGetSupportedContentAttachments",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "validation.ts",
+							"line": 602,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 165,
+							"name": "requireGetSupportedContentAttachments",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "requireGetSupportedContentAttachments iterates over the provided list and returns\nthe valid+supported attachments. If the passed in obj is empty, returns an empty array.\nIf there are attachments but none of them are valid+supported, it throws an error.\nAttachments MUST first pass a type check to be considered valid at all.",
+								"returns": "an array of all valid ActivityContentAttachments",
+								"tags": [
+									{
+										"tag": "throws",
+										"text": "InvalidActivityContentError if there are no valid attachments with\nsupported Link attachments.\n\nExamples:\n1. One Image attachment with one URL that points to a TIFF file throws an error.\n2. One Image attachment with two URLs, one that is a TIFF and the other is JPG,\n   does not throw.\n3. One Image attachment with two URLs, both are JPG, but one has a malformed\n   hash of 0xdeadbeef (it's too short), throws an error due to failing\n   the type check.\n4. Two Image attachments, the one from #2 and the one from #3, does NOT throw and\n   returns just #2.\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 166,
+									"name": "obj",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "an array of unknown object types to check for validity"
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "unknown"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 46,
+									"name": "ActivityContentAttachment"
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 152,
+					"name": "requireIsActivityContentNoteType",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "validation.ts",
+							"line": 492,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 153,
+							"name": "requireIsActivityContentNoteType",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "requireActivityContentNoteType() is a type check function for ActivityContentNote\nobjects. Note that this function only checks that the given object meets the\nfirst-level type definition of an ActivityContentNote. It **does not** perform\ndeeper type validations or any logic\nvalidations, such as checking the format of string fields or checking that\nrequired attachments each include at least one supported format.",
+								"returns": "true if the object is an ActivityContentNote, otherwise throws an Error.",
+								"tags": [
+									{
+										"tag": "throws",
+										"text": "InvalidActivityContentError if type checks fail.\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 154,
+									"name": "obj",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The object to check"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								}
+							],
+							"type": {
+								"type": "predicate",
+								"name": "obj",
+								"asserts": false,
+								"targetType": {
+									"type": "reference",
+									"id": 11,
+									"name": "ActivityContentNote"
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 158,
+					"name": "requireIsActivityContentProfileType",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "validation.ts",
+							"line": 539,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 159,
+							"name": "requireIsActivityContentProfileType",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "requireIsActivityContentProfileType() is a type check function for\nActivityContentProfile objects. Note that this function only checks that the\ngiven object meets the first-level type definition of an ActivityContentProfile. It\ndoes not** perform deeper type validations or any logic validations, such as checking the format of\nstring fields or checking that the icon field includes at least one supported\nimage format.",
+								"returns": "true if the object is an ActivityContentProfile,otherwise throws an Error",
+								"tags": [
+									{
+										"tag": "throws",
+										"text": "InvalidActivityContentError if type checks fail.\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 160,
+									"name": "obj",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The object to check"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								}
+							],
+							"type": {
+								"type": "predicate",
+								"name": "obj",
+								"asserts": false,
+								"targetType": {
+									"type": "reference",
+									"id": 21,
+									"name": "ActivityContentProfile"
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 149,
+					"name": "requireToActivityContentAttachment",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "validation.ts",
+							"line": 181,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 150,
+							"name": "requireToActivityContentAttachment",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "requireActivityContentAttachment validates an unknown object and returns it\nas an ActivityContentAttachment type if valid, and throws an error if not."
+							},
+							"parameters": [
+								{
+									"id": 151,
+									"name": "obj",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "the object to convert\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 46,
+								"name": "ActivityContentAttachment"
+							}
+						}
+					]
+				},
+				{
+					"id": 167,
+					"name": "requireValidActivityContentNote",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "validation.ts",
+							"line": 628,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 168,
+							"name": "requireValidActivityContentNote",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "requireValidActivityContentNote() validates that a given object meets all\nnecessary specification requirements for an ActivityContentNote object,\ninclude string field formats and other logical validations. Note that this\nfunction **does not** attempt to fetch any attachments to validate that their\nhashes are correct.",
+								"returns": "true if valid",
+								"tags": [
+									{
+										"tag": "throws",
+										"text": "InvalidActivityContentError if not valid, with a message\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 169,
+									"name": "obj",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The object to check"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					]
+				},
+				{
+					"id": 170,
+					"name": "requireValidActivityContentProfile",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "validation.ts",
+							"line": 663,
+							"character": 13
+						}
+					],
+					"signatures": [
+						{
+							"id": 171,
+							"name": "requireValidActivityContentProfile",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "requireValidActivityContentProfile() validates that a given object meets all\nnecessary specification requirements for an ActivityContentProfile object,\ninclude string field formats and other logical validations. Note that this\nfunction **does not** attempt to fetch any icons to validate that their\nhashes are correct.",
+								"returns": "true if valid.",
+								"tags": [
+									{
+										"tag": "throws",
+										"text": "InvalidActivityContentError if not valid, with a message\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 172,
+									"name": "obj",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "The object to check"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						155,
+						161,
+						146,
+						164,
+						152,
+						158,
+						149,
+						167,
+						170
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "validation.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"kind": 2,
+			"children": [
+				1,
+				10,
+				145
+			]
+		}
+	]
+}
