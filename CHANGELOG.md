@@ -1,12 +1,15 @@
 # Changelog
 
 ## Unreleased
+
+## [1.0.1] - 2022-04-28
+### Changes
+- Changed mime types audio and image to match the spec
 - Copied Npm release workflow [DSNP-SDK](https://github.com/LibertyDSNP/sdk-ts/tree/main/.github/workflows)
 - Updated placeholder value in LICENSE
-- Changed mime types audio and image to match the spec
 - Set Up Tests with Github Actions
 - Updated building to Node 16
-- Update packages
+- Updated packages
 
 ## [1.0.0] - 2021-11-24
 ### Added
