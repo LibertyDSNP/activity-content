@@ -6,6 +6,7 @@
 - Changed mime types audio and image to match the spec
 - Set Up Tests with Github Actions
 - Updated building to Node 16
+- Update packages
 
 ## [1.0.0] - 2021-11-24
 ### Added
