@@ -1,8 +1,7 @@
 # DSNP SDK TypeScript Development
 
 ## Library Development Notes
-- `.js` files are not allowed in the root directory. For more information why see `scripts/multimodules.js`.
-- Update the docs folder as needed by running `npm run docs:markdown`
+- Update the docs folder as needed by running `npm run doc:markdown`
 
 ### Styleguide
 
@@ -23,19 +22,19 @@ This SDK is linted with `Prettier` and `ESlint`.
 1. sdk-ts: `npm install`
 2. sdk-ts: `npm run build`
 3. sdk-ts: `npm link`
-4. In other project: `npm link @LibertyDSNP/sdk`
+4. In other project: `npm link @dsnp/activity-content`
 5. The other project now uses the sdk-ts folder as the node_modules folder for the SDK
 6. sdk-ts: `npm run watch`
 
 ### Documentation Generation Notes
 
-- `npm run docs` generates HTML documentation in `dist`
-- `npm run docs:markdown` generates markdown documentation in `docs`
+- `npm run doc` generates HTML documentation in `dist`
+- `npm run doc:markdown` generates markdown documentation in `docs`
 - Edit the list of excluded files in `tsconfig.json` -> `typedocOptions` -> `exclude`
 
 ### How to Release
 
-1. Commit version update in package.json following [Semver 2.0](https://semver.org/)
+1. Commit version update in package.json following [Semver 2.0](https://semver.org/) and update CHANGELOG.md
 2. Draft New Release on GitHub.com
 3. Set tag to v[package.json version]
 4. Set title to "v[package.json version] Major Feature Name"
@@ -50,4 +49,4 @@ This SDK is linted with `Prettier` and `ESlint`.
     - Not a thing anymore
     ```
 6. Publish
-7. TODO: CI will build and publish to the npm repository
+7. CI will build and publish to the npm repository
