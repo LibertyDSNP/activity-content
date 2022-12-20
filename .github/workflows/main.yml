@@ -8,22 +8,23 @@ jobs:
   test:
     runs-on: ubuntu-20.04
     steps:
-      - name: Checkout Activity Content
-        uses: actions/checkout@v2
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
         with:
           path: main
 
-      - uses: actions/cache@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: "https://registry.npmjs.org"
+
+      - uses: actions/cache@v3
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-
-      - name: Use Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: '16.14.0'
 
       - name: Install
         run: npm ci
@@ -64,4 +65,3 @@ jobs:
           cd importTest
           npm i ../main/dsnp-activity-content.tgz
           npm test
-          
