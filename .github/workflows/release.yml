@@ -7,30 +7,31 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Use Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: "16.14.0"
+          node-version: 16
           registry-url: "https://registry.npmjs.org"
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+
       - name: Install 💾
         run: npm ci
 
       - name: Get package.json version 👀
         id: package-version
-        uses: martinbeentjes/npm-get-version-action@master
+        uses: martinbeentjes/npm-get-version-action@f9202ed69764f06546b2313b263136639df8e51e
 
       - name: Remove v from release version
         id: get_release_version
-        uses: battila7/get-version-action@v2
+        uses: battila7/get-version-action@90eb8fc70f6dfcf3f9b95ed8f164d2c05038e729
 
       - name: Check package.json version matches release tag ✅
         run: echo "Package.json version ( ${{ steps.package-version.outputs.current-version}} ) does not match release version ( ${{ steps.get_release_version.outputs.version-without-v }} )" && exit 1
@@ -47,7 +48,7 @@ jobs:
 
       - name: Revert Release if failure 💣
         if: ${{ failure() }}
-        uses: author/action-rollback@stable
+        uses: author/action-rollback@c45902b7e6829b062f5a68dc15e25a85f22741d6
         with:
           tag: ${{ github.event.release.tag_name }}
         env:
@@ -57,22 +58,21 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Use Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: "14.15.5"
+          node-version: 16
+          registry-url: "https://registry.npmjs.org"
 
-      - name: Update npm to v7
-        run: npm i -g npm
-
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+
       - name: Install 💾
         run: npm ci
 
@@ -83,7 +83,7 @@ jobs:
         run: npm run doc:json
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.0.0
+        uses: JamesIves/github-pages-deploy-action@4.4.1
         with:
           branch: gh-pages
           folder: dist/docs
