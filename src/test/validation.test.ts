@@ -427,7 +427,7 @@ describe("activity content validations", () => {
         it(`${testCase.name} throws expected error`, () => {
           expect(() =>
             requireGetSupportedContentAttachments(testCase.attachment)
-          ).toThrowError(testCase.expErr);
+          ).toThrow(testCase.expErr);
         });
       });
     });
@@ -805,7 +805,7 @@ describe("activity content validations", () => {
         it(`${testCase.name} throws correct error`, () => {
           expect(() =>
             requireIsActivityContentNoteType(testCase.testObject)
-          ).toThrowError("Invalid ActivityContent: " + testCase.expErr);
+          ).toThrow("Invalid ActivityContent: " + testCase.expErr);
         });
       });
     });
@@ -983,7 +983,7 @@ describe("activity content validations", () => {
         it(`throws error for ${testCase.name}`, () => {
           expect(() =>
             requireIsActivityContentProfileType(testCase.testObject)
-          ).toThrowError(
+          ).toThrow(
             "Activity Content Error: Invalid ActivityContent: " +
               testCase.expErr
           );
@@ -1172,9 +1172,7 @@ describe("activity content validations", () => {
         },
       ].forEach((testCase) => {
         it(`throws an error for ${testCase.name}`, () => {
-          expect(() =>
-            requireValidActivityContentNote(testCase.note)
-          ).toThrowError(
+          expect(() => requireValidActivityContentNote(testCase.note)).toThrow(
             "Activity Content Error: Invalid ActivityContent: " +
               testCase.expErr
           );
@@ -1383,7 +1381,7 @@ describe("activity content validations", () => {
         it(`throws error for ${testCase.name}`, () => {
           expect(() =>
             requireValidActivityContentProfile(testCase.testObject)
-          ).toThrowError(
+          ).toThrow(
             "Activity Content Error: Invalid ActivityContent: " +
               testCase.expErr
           );

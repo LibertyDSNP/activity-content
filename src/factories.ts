@@ -19,7 +19,6 @@ import type {
 /**
  * createNote() provides a simple factory for generating an ActivityContentNote
  * object.
- *
  * @param content - The text content to include in the note
  * @param options - Overrides default fields for the ActivityContentNote
  * @returns An ActivityContentNote object
@@ -38,7 +37,6 @@ export const createNote = (
 /**
  * createProfile() provides a simple factory for generating an
  * ActivityContentProfile object.
- *
  * @param options - Overrides any default fields for the ActivityContentProfile
  * @returns An ActivityContentProfile object
  */
@@ -53,7 +51,6 @@ export const createProfile = (
 /**
  * createAudioAttachment() provides a simple factory for generating an
  * ActivityContentAudio object.
- *
  * @param links - An array of ActivityContentAudioLink objects to include
  * @param options - Overrides any default fields for the ActivityContentAudio
  * @returns An ActivityContentAudio object
@@ -71,7 +68,6 @@ export const createAudioAttachment = (
  * createAudioLink() provides a simple factory for generation an
  * ActivityContentAudioLink object for inclusion in an ActivityContentAudio
  * object.
- *
  * @param href      - The URL of the file
  * @param mediaType - The MIME type of the file (see SUPPORTED_AUDIO_MEDIA_TYPES within validation.ts)
  * @param hash      - An ActivityContentHash object to authenticate the file
@@ -94,7 +90,6 @@ export const createAudioLink = (
 /**
  * createImageAttachment() provides a simple factory for generating an
  * ActivityContentImage object.
- *
  * @param links - An array of ActivityContentImageLink objects to include
  * @param options - Overrides any default fields for the ActivityContentImage
  * @returns An ActivityContentImage object
@@ -112,7 +107,6 @@ export const createImageAttachment = (
  * createImageLink() provides a simple factory for generation an
  * ActivityContentImageLink object for inclusion in an ActivityContentImage
  * object.
- *
  * @param href      - The URL of the file
  * @param mediaType - The MIME type of the file (see SUPPORTED_IMAGE_MEDIA_TYPES within validation.ts)
  * @param hash      - An ActivityContentHash object to authenticate the file
@@ -135,7 +129,6 @@ export const createImageLink = (
 /**
  * createVideoAttachment() provides a simple factory for generating an
  * ActivityContentVideo object.
- *
  * @param links - An array of ActivityContentVideoLink objects to include
  * @param options - Overrides any default fields for the ActivityContentVideo
  * @returns An ActivityContentVideo object
@@ -153,7 +146,6 @@ export const createVideoAttachment = (
  * createVideoLink() provides a simple factory for generation an
  * ActivityContentVideoLink object for inclusion in an ActivityContentVideo
  * object.
- *
  * @param href      - The URL of the file
  * @param mediaType - The MIME type of the file (see SUPPORTED_VIDEO_MEDIA_TYPES within validation.ts)
  * @param hash      - An ActivityContentHash object to authenticate the file
@@ -176,7 +168,6 @@ export const createVideoLink = (
 /**
  * createLinkAttachment() provides a simple factory for generating an
  * ActivityContentLink object.
- *
  * @param href - The URL to include in the link
  * @param options - Overrides any default fields for the ActivityContentLink
  * @returns An ActivityContentLink object
@@ -193,7 +184,6 @@ export const createLinkAttachment = (
 /**
  * createLocation() provides a simple factory for generating an
  * ActivityContentLocation object.
- *
  * @param name - This is the string provided for name of the Location
  * @param options - Overrides any default fields for the ActivityContentLocation
  * @returns An ActivityContentLocation object
@@ -210,7 +200,6 @@ export const createLocation = (
 /**
  * createHashtag() provides a simple factory for generating an
  * ActivityContentHashtag object.
- *
  * @param name - The hashtag value, without "#" character
  * @returns An ActivityContentTag object
  */
@@ -221,7 +210,6 @@ export const createHashtag = (name: string): ActivityContentHashtag => ({
 /**
  * createMention() provides a simple factory for generating an
  * ActivityContentMention object.
- *
  * @param id - The DSNPUserId of the mention user
  * @param options - Any additional fields for the ActivityContentMention
  * @returns An ActivityContentMention object
@@ -240,7 +228,6 @@ export const createMention = (
  * object. This factory assumes the user intends to use a standard Keccak256
  * hash. To use other authentication algorithms, users should build their own
  * ActivityContentHash objects.
- *
  * @param content - The file content to be hashed
  * @returns An ActivityContentHash containing the keccak256 proof of the content
  */

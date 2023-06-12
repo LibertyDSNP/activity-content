@@ -56,7 +56,6 @@ const SUPPORTED_VIDEO_MEDIA_TYPES = [
 
 /**
  * isDSNPUserURI validates a given object as a DSNPUserURI.
- *
  * @param uri - The object to validate
  * @returns True of false depending on whether the string is a valid DSNPUserURI
  */
@@ -175,7 +174,6 @@ const requireValidDuration = (
 /**
  * requireActivityContentAttachment validates an unknown object and returns it
  * as an ActivityContentAttachment type if valid, and throws an error if not.
- *
  * @param obj - the object to convert
  */
 export const requireToActivityContentAttachment = (
@@ -371,7 +369,6 @@ const requireIsActivityContentMention = (
 /**
  * requireToActivityContentAudio validates then converts an unknown object type to an ActivityContentAudio
  * in a type safe way.  It throws an error if the object is not valid.
- *
  * @param obj - the object to convert
  */
 const requireToActivityContentAudio = (obj: unknown): ActivityContentAudio => {
@@ -399,7 +396,6 @@ const requireToActivityContentAudio = (obj: unknown): ActivityContentAudio => {
 /**
  * requireToActivityContentImage validates then converts an unknown object type to an ActivityContentImage
  * in a type safe way. It throws an error if the object is not valid.
- *
  * @param obj - the object to convert
  */
 const requireToActivityContentImage = (obj: unknown): ActivityContentImage => {
@@ -426,7 +422,6 @@ const requireToActivityContentImage = (obj: unknown): ActivityContentImage => {
 /**
  * requireToActivityContentVideo validates then converts an unknown object type to an ActivityContentVideo
  * in a type safe way.  It throws an error if the object is not valid.
- *
  * @param obj - the object to convert
  */
 const requireToActivityContentVideo = (obj: unknown): ActivityContentVideo => {
@@ -484,7 +479,6 @@ const requireIsActivityContentBaseType = (
  * deeper type validations or any logic
  * validations, such as checking the format of string fields or checking that
  * required attachments each include at least one supported format.
- *
  * @param obj - The object to check
  * @returns true if the object is an ActivityContentNote, otherwise throws an Error.
  * @throws InvalidActivityContentError if type checks fail.
@@ -507,7 +501,6 @@ export const requireIsActivityContentNoteType = (
 /**
  * isActivityContentNoteType is a non-throwing version of `requireIsActivityContentNoteType`
  * Performs the same checks but catches InvalidActivityContentError and returns false instead.
- *
  * @param obj - The object to check
  * @returns a boolean - indicating if the object is an ActivityContentNote
  */
@@ -531,7 +524,6 @@ export const isActivityContentNoteType = (
  * does not** perform deeper type validations or any logic validations, such as checking the format of
  * string fields or checking that the icon field includes at least one supported
  * image format.
- *
  * @param obj - The object to check
  * @returns true if the object is an ActivityContentProfile,otherwise throws an Error
  * @throws InvalidActivityContentError if type checks fail.
@@ -561,7 +553,6 @@ export const requireIsActivityContentProfileType = (
 /**
  * isActivityContentProfileType is a non-throwing version of `requireIsActivityContentProfileType`.
  * Performs the same checks but catches InvalidActivityContentError and returns false instead.
- *
  * @param obj - The object to check
  * @returns a boolean - indicating if the object is an ActivityContentProfile
  */
@@ -583,7 +574,6 @@ export const isActivityContentProfileType = (
  * the valid+supported attachments. If the passed in obj is empty, returns an empty array.
  * If there are attachments but none of them are valid+supported, it throws an error.
  * Attachments MUST first pass a type check to be considered valid at all.
- *
  * @param obj - an array of unknown object types to check for validity
  * @returns an array of all valid ActivityContentAttachments
  * @throws InvalidActivityContentError if there are no valid attachments with
@@ -620,7 +610,6 @@ export const requireGetSupportedContentAttachments = (
  * include string field formats and other logical validations. Note that this
  * function **does not** attempt to fetch any attachments to validate that their
  * hashes are correct.
- *
  * @param obj - The object to check
  * @returns true if valid
  * @throws InvalidActivityContentError if not valid, with a message
@@ -655,7 +644,6 @@ export const requireValidActivityContentNote = (obj: unknown): boolean => {
  * include string field formats and other logical validations. Note that this
  * function **does not** attempt to fetch any icons to validate that their
  * hashes are correct.
- *
  * @param obj - The object to check
  * @returns true if valid.
  * @throws InvalidActivityContentError if not valid, with a message
