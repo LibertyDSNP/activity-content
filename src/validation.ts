@@ -14,8 +14,8 @@ import {
   ActivityContentHashtag,
   ActivityContentMention,
   ActivityContentLocation,
-} from "./factories";
-import { DSNPUserURI } from "./utilities/types";
+  DSNPUserURI,
+} from "./types";
 import {
   isRecord,
   isString,

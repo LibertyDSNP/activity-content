@@ -2,7 +2,7 @@ import {
   ActivityContentAttachment,
   ActivityContentNote,
   ActivityContentProfile,
-} from "../factories";
+} from "../types";
 import {
   isActivityContentProfileType,
   isActivityContentNoteType,
