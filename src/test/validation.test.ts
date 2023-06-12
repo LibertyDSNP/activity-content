@@ -80,14 +80,25 @@ describe("activity content validations", () => {
         type: "Note",
         content: "Hello world!",
         mediaType: "text/plain",
+        published: "2000-01-01T00:00:00.000+00:00",
       };
       expect(isActivityContentNoteType(validNote)).toEqual(true);
     });
-    it("returns false for an invalid Note", () => {
+    it("returns false for an invalid Note: mediaType", () => {
       const invalidNote = {
         "@context": "https://www.w3.org/ns/activitystreams",
         type: "Note",
         content: "I am invalid because I am missing a mediaType",
+        published: "2000-01-01T00:00:00.000+00:00",
+      };
+      expect(isActivityContentNoteType(invalidNote)).toEqual(false);
+    });
+    it("returns false for an invalid Note: published", () => {
+      const invalidNote = {
+        "@context": "https://www.w3.org/ns/activitystreams",
+        type: "Note",
+        mediaType: "text/plain",
+        content: "I am invalid because I am missing a published",
       };
       expect(isActivityContentNoteType(invalidNote)).toEqual(false);
     });
@@ -595,18 +606,21 @@ describe("activity content validations", () => {
           type: "Note",
           content: "Hello world!",
           mediaType: "text/plain",
+          published: "2000-01-01T00:00:00.000+00:00",
         },
         "with no attachments and no content": {
           "@context": "https://www.w3.org/ns/activitystreams",
           type: "Note",
           content: "",
           mediaType: "text/plain",
+          published: "2000-01-01T00:00:00.000+00:00",
         },
         "with a hashtag": {
           "@context": "https://www.w3.org/ns/activitystreams",
           type: "Note",
           content: "Hello world!",
           mediaType: "text/plain",
+          published: "2000-01-01T00:00:00.000+00:00",
           tag: [{ name: "happiness" }, { name: "feels" }, { name: "kawaii" }],
         },
         "with a mention": {
@@ -614,6 +628,7 @@ describe("activity content validations", () => {
           type: "Note",
           content: "Hello world!",
           mediaType: "text/plain",
+          published: "2000-01-01T00:00:00.000+00:00",
           tag: [
             { type: "Mention", id: "dsnp://1001", name: "Spoopy" },
             { type: "Mention", id: "dsnp://1002", name: "Snoopy" },
@@ -624,6 +639,7 @@ describe("activity content validations", () => {
           type: "Note",
           content: "Feel like I've heard this before!",
           mediaType: "text/plain",
+          published: "2000-01-01T00:00:00.000+00:00",
           attachment: [
             {
               type: "Audio",
@@ -649,6 +665,7 @@ describe("activity content validations", () => {
           type: "Note",
           content: "Interesting guy!",
           mediaType: "text/plain",
+          published: "2000-01-01T00:00:00.000+00:00",
           attachment: [
             {
               type: "Image",
@@ -674,6 +691,7 @@ describe("activity content validations", () => {
           type: "Note",
           content: "What an adventure!",
           mediaType: "text/plain",
+          published: "2000-01-01T00:00:00.000+00:00",
           attachment: [
             {
               type: "Video",
@@ -700,6 +718,7 @@ describe("activity content validations", () => {
             type: "Note",
             content: "What an adventure!",
             mediaType: "text/plain",
+            published: "2000-01-01T00:00:00.000+00:00",
             attachment: [
               {
                 type: "Video",
@@ -737,6 +756,7 @@ describe("activity content validations", () => {
           type: "Note",
           content: "Interesting project!",
           mediaType: "text/plain",
+          published: "2000-01-01T00:00:00.000+00:00",
           attachment: [
             {
               type: "Link",
@@ -749,6 +769,7 @@ describe("activity content validations", () => {
           type: "Note",
           content: "Hello world!",
           mediaType: "text/plain",
+          published: "2000-01-01T00:00:00.000+00:00",
           location: {
             type: "Place",
             name: "Topkapi Palace, Istanbul, Turkey",
@@ -999,12 +1020,14 @@ describe("activity content validations", () => {
           type: "Note",
           content: "Hello world!",
           mediaType: "text/plain",
+          published: "2000-01-01T00:00:00.000+00:00",
         },
         "a note with an audio attachment": {
           "@context": "https://www.w3.org/ns/activitystreams",
           type: "Note",
           content: "Feel like I've heard this before!",
           mediaType: "text/plain",
+          published: "2000-01-01T00:00:00.000+00:00",
           attachment: [
             {
               type: "Audio",
@@ -1030,6 +1053,7 @@ describe("activity content validations", () => {
           type: "Note",
           content: "Interesting guy!",
           mediaType: "text/plain",
+          published: "2000-01-01T00:00:00.000+00:00",
           attachment: [
             {
               type: "Image",
@@ -1055,6 +1079,7 @@ describe("activity content validations", () => {
           type: "Note",
           content: "What an adventure!",
           mediaType: "text/plain",
+          published: "2000-01-01T00:00:00.000+00:00",
           attachment: [
             {
               type: "Video",
@@ -1080,6 +1105,7 @@ describe("activity content validations", () => {
           type: "Note",
           content: "Interesting project!",
           mediaType: "text/plain",
+          published: "2000-01-01T00:00:00.000+00:00",
           attachment: [
             {
               type: "Link",
@@ -1092,6 +1118,7 @@ describe("activity content validations", () => {
           type: "Note",
           content: "Interesting project!",
           mediaType: "text/plain",
+          published: "2000-01-01T00:00:00.000+00:00",
           attachment: [
             {
               type: "Link",
@@ -1112,6 +1139,7 @@ describe("activity content validations", () => {
           type: "Note",
           content: "Interesting project!",
           mediaType: "text/plain",
+          published: "2000-01-01T00:00:00.000+00:00",
           location: { type: "Place", name: "Valjevo, Serbia" },
         },
       };
@@ -1154,6 +1182,7 @@ describe("activity content validations", () => {
             type: "Note",
             content: "Interesting project!",
             mediaType: "text/plain",
+            published: "2000-01-01T00:00:00.000+00:00",
           },
         },
         {
@@ -1164,6 +1193,17 @@ describe("activity content validations", () => {
               type: "bad",
               name: "This is fine",
             },
+            "@context": "https://www.w3.org/ns/activitystreams",
+            type: "Note",
+            content: "Interesting project!",
+            mediaType: "text/plain",
+            published: "2000-01-01T00:00:00.000+00:00",
+          },
+        },
+        {
+          name: "with a note object that is not a valid published",
+          expErr: "ActivityContentNote published is not a string",
+          note: {
             "@context": "https://www.w3.org/ns/activitystreams",
             type: "Note",
             content: "Interesting project!",

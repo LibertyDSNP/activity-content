@@ -17,13 +17,17 @@ import {
 describe("activityPub", () => {
   describe("createNote", () => {
     it("returns an ActivityContentNote with the given parameters", () => {
-      const activityContentNote = createNote("Hello World!");
+      const activityContentNote = createNote(
+        "Hello World!",
+        new Date("2020-01-01T17:30:00.000Z")
+      );
 
       expect(activityContentNote).toMatchObject({
         "@context": "https://www.w3.org/ns/activitystreams",
         type: "Note",
         content: "Hello World!",
         mediaType: "text/plain",
+        published: "2020-01-01T17:30:00.000Z",
       });
     });
   });

@@ -495,6 +495,7 @@ export const requireIsActivityContentNoteType = (
     );
   if (obj["attachment"])
     requireToArray(obj["attachment"], "ActivityContentNote attachment");
+  requireToString(obj["published"], "ActivityContentNote published");
   return true;
 };
 

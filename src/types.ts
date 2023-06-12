@@ -27,6 +27,7 @@ export interface ActivityContentNote extends ActivityContentBase {
   mediaType: "text/plain";
   content: string;
   attachment?: Array<ActivityContentAttachment>;
+  published: string;
 }
 
 /**
