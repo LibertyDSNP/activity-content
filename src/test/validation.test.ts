@@ -1,3 +1,4 @@
+import { jest } from "@jest/globals";
 import {
   ActivityContentAttachment,
   ActivityContentNote,
@@ -36,13 +37,7 @@ describe("activity content validations", () => {
                 type: "Link",
                 href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
                 mediaType: "image/jpeg",
-                hash: [
-                  {
-                    algorithm: "keccak256",
-                    value:
-                      "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-                  },
-                ],
+                hash: ["zQmReZ1EGMTHNdB1izF1cUH3nYZ1htiyQpHQUPws9rRFHpE"],
               },
             ],
           },
@@ -114,25 +109,13 @@ describe("activity content validations", () => {
                 type: "Link",
                 href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
                 mediaType: "image/jpeg",
-                hash: [
-                  {
-                    algorithm: "keccak256",
-                    value:
-                      "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-                  },
-                ],
+                hash: ["zQmReZ1EGMTHNdB1izF1cUH3nYZ1htiyQpHQUPws9rRFHpE"],
               },
               {
                 type: "Link",
                 href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
                 mediaType: "image/foo",
-                hash: [
-                  {
-                    algorithm: "keccak256",
-                    value:
-                      "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-                  },
-                ],
+                hash: ["zQmReZ1EGMTHNdB1izF1cUH3nYZ1htiyQpHQUPws9rRFHpE"],
               },
             ],
           },
@@ -149,16 +132,8 @@ describe("activity content validations", () => {
                   href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm",
                   mediaType: "video/webm",
                   hash: [
-                    {
-                      algorithm: "keccak256",
-                      value:
-                        "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
-                    },
-                    {
-                      algorithm: "secp256k1",
-                      value:
-                        "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a29999",
-                    },
+                    "zQmfWveGhSnUiM2i1tMTsHjho81q4nincHCg9krhecsoLf7",
+                    "zPmfWveGhSnUiM2i1tMTsHjho81q4nincHCg9krhecsoLf7",
                   ],
                 },
               ],
@@ -178,13 +153,7 @@ describe("activity content validations", () => {
                 type: "Link",
                 href: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Wilhelm_Scream.ogg",
                 mediaType: "audio/ogg",
-                hash: [
-                  {
-                    algorithm: "keccak256",
-                    value:
-                      "0x3b33df3d163e86514e9041ac97e3d920a75bbafa8d9c1489e631897874b762cc",
-                  },
-                ],
+                hash: ["zQmRyTFRtrv13YFS7TftT5kFXyFcbb95rCuBJTErngrCBgv"],
               },
             ],
           },
@@ -198,26 +167,14 @@ describe("activity content validations", () => {
                   type: "Link",
                   href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
                   mediaType: "badMediaType",
-                  hash: [
-                    {
-                      algorithm: "keccak256",
-                      value:
-                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-                    },
-                  ],
+                  hash: ["zQmReZ1EGMTHNdB1izF1cUH3nYZ1htiyQpHQUPws9rRFHpE"],
                 },
                 {
                   type: "Link",
                   name: "this is fine",
                   href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
                   mediaType: "image/jpeg",
-                  hash: [
-                    {
-                      algorithm: "keccak256",
-                      value:
-                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-                    },
-                  ],
+                  hash: ["zQmReZ1EGMTHNdB1izF1cUH3nYZ1htiyQpHQUPws9rRFHpE"],
                 },
               ],
             },
@@ -236,7 +193,7 @@ describe("activity content validations", () => {
         {
           name: "a Video attachment with multiple URLs and one fails a type check (with a malformed hash)",
           expErr:
-            "Activity Content Error: Invalid ActivityContent: ActivityContentHash value is invalid",
+            "Activity Content Error: Invalid ActivityContent: ActivityContent hash algorithms must contain valid multihash with a supported algorithm",
           attachment: [
             {
               name: "Multiple URLs with one having a malformed hash",
@@ -247,24 +204,13 @@ describe("activity content validations", () => {
                   type: "Link",
                   href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
                   mediaType: "video/mpeg",
-                  hash: [
-                    {
-                      algorithm: "keccak256",
-                      value: "0xThis hash fails to match the regex",
-                    },
-                  ],
+                  hash: ["zQmReZ1EGMTHNdB1izF1cUH3nYZ1htiyQpHQUPws9rRFHpE"],
                 },
                 {
                   type: "Link",
                   href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
                   mediaType: "video/webm",
-                  hash: [
-                    {
-                      algorithm: "keccak256",
-                      value:
-                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-                    },
-                  ],
+                  hash: ["BAD"],
                 },
               ],
             },
@@ -283,13 +229,7 @@ describe("activity content validations", () => {
                   type: "Link",
                   href: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Wilhelm_Scream.ogg",
                   mediaType: "audio/ogg",
-                  hash: [
-                    {
-                      algorithm: "keccak256",
-                      value:
-                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-                    },
-                  ],
+                  hash: ["zQmRyTFRtrv13YFS7TftT5kFXyFcbb95rCuBJTErngrCBgv"],
                 },
               ],
             },
@@ -307,13 +247,7 @@ describe("activity content validations", () => {
                   type: "Link",
                   href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
                   mediaType: "image/jpeg",
-                  hash: [
-                    {
-                      algorithm: "keccak256",
-                      value:
-                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-                    },
-                  ],
+                  hash: ["zQmReZ1EGMTHNdB1izF1cUH3nYZ1htiyQpHQUPws9rRFHpE"],
                 },
               ],
             },
@@ -330,13 +264,7 @@ describe("activity content validations", () => {
                   type: "Link",
                   href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm",
                   mediaType: "video/avi",
-                  hash: [
-                    {
-                      algorithm: "keccak256",
-                      value:
-                        "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
-                    },
-                  ],
+                  hash: ["zQmfWveGhSnUiM2i1tMTsHjho81q4nincHCg9krhecsoLf7"],
                 },
               ],
             },
@@ -355,7 +283,7 @@ describe("activity content validations", () => {
         {
           name: "audio attachment with an unsupported algorithm",
           expErr:
-            "ActivityContent hash algorithms must contain at least one of: keccak256",
+            "ActivityContent hash algorithms must contain valid multihash with a supported algorithm",
           attachment: [
             {
               type: "Audio",
@@ -364,13 +292,7 @@ describe("activity content validations", () => {
                   type: "Link",
                   href: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Wilhelm_Scream.ogg",
                   mediaType: "audio/ogg",
-                  hash: [
-                    {
-                      algorithm: "secp256k1",
-                      value:
-                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-                    },
-                  ],
+                  hash: ["zPmRyTFRtrv13YFS7TftT5kFXyFcbb95rCuBJTErngrCBgv"],
                 },
               ],
             },
@@ -387,6 +309,26 @@ describe("activity content validations", () => {
                   type: "Link",
                   href: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Wilhelm_Scream.ogg",
                   mediaType: "audio/ogg",
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: "audio attachment with bad hash",
+          expErr:
+            "ActivityContent hash algorithms must contain valid multihash with a supported algorithm",
+          attachment: [
+            {
+              type: "Audio",
+              url: [
+                {
+                  type: "Link",
+                  href: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Wilhelm_Scream.ogg",
+                  mediaType: "audio/ogg",
+                  hash: [
+                    "0x360097c9715f55abcc26ab73f12f69b730c660fbf019fc63caa685bfa9b6585b",
+                  ],
                 },
               ],
             },
@@ -412,23 +354,12 @@ describe("activity content validations", () => {
                 {
                   type: "Link",
                   href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
-                  hash: [
-                    {
-                      algorithm: "keccak256",
-                      value:
-                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-                    },
-                  ],
+                  hash: ["zQmReZ1EGMTHNdB1izF1cUH3nYZ1htiyQpHQUPws9rRFHpE"],
                 },
                 {
                   type: "Link",
                   href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
-                  hash: [
-                    {
-                      algorithm: "keccak256",
-                      value: "0x12345",
-                    },
-                  ],
+                  hash: ["zQmReZ1EGMTHNdB1izF1cUH3nYZ1htiyQpHQUPws9rRFHpE"],
                 },
               ],
             },
@@ -443,7 +374,7 @@ describe("activity content validations", () => {
       });
     });
     describe("when there are multiple attachments, and one is invalid by failing type check", () => {
-      it("foo", () => {
+      it("will match the valid one only", () => {
         const validAttachment = {
           type: "Video",
           url: [
@@ -451,13 +382,7 @@ describe("activity content validations", () => {
               type: "Link",
               href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm",
               mediaType: "video/webm",
-              hash: [
-                {
-                  algorithm: "keccak256",
-                  value:
-                    "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
-                },
-              ],
+              hash: ["zQmfWveGhSnUiM2i1tMTsHjho81q4nincHCg9krhecsoLf7"],
             },
           ],
         };
@@ -468,12 +393,7 @@ describe("activity content validations", () => {
               type: "Link",
               href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Happy_Rabbits_On_Farm_4K.webm",
               mediaType: "video/webm",
-              hash: [
-                {
-                  algorithm: "keccak256",
-                  value: "0xdeadbeef",
-                },
-              ],
+              hash: ["zPmfWveGhSnUiM2i1tMTsHjho81q4nincHCg9krhecsoLf7"],
             },
           ],
         };
@@ -492,13 +412,7 @@ describe("activity content validations", () => {
               type: "Link",
               href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
               mediaType: "image/jpeg",
-              hash: [
-                {
-                  algorithm: "keccak256",
-                  value:
-                    "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-                },
-              ],
+              hash: ["zQmReZ1EGMTHNdB1izF1cUH3nYZ1htiyQpHQUPws9rRFHpE"],
             },
           ],
         };
@@ -508,13 +422,7 @@ describe("activity content validations", () => {
             {
               type: "Link",
               href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
-              hash: [
-                {
-                  algorithm: "keccak256",
-                  value:
-                    "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-                },
-              ],
+              hash: ["zQmReZ1EGMTHNdB1izF1cUH3nYZ1htiyQpHQUPws9rRFHpE"],
             },
           ],
         };
@@ -551,13 +459,7 @@ describe("activity content validations", () => {
               type: "Link",
               href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
               mediaType: "image/jpeg",
-              hash: [
-                {
-                  algorithm: "keccak256",
-                  value:
-                    "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-                },
-              ],
+              hash: ["zQmReZ1EGMTHNdB1izF1cUH3nYZ1htiyQpHQUPws9rRFHpE"],
             },
           ],
         };
@@ -572,18 +474,7 @@ describe("activity content validations", () => {
               type: "Link",
               href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm",
               mediaType: "video/webm",
-              hash: [
-                {
-                  algorithm: "keccak256",
-                  value:
-                    "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
-                },
-                {
-                  algorithm: "secp256k1",
-                  value:
-                    "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a29999",
-                },
-              ],
+              hash: ["zQmfWveGhSnUiM2i1tMTsHjho81q4nincHCg9krhecsoLf7", "BAD"],
             },
           ],
         };
@@ -648,13 +539,7 @@ describe("activity content validations", () => {
                   type: "Link",
                   href: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Wilhelm_Scream.ogg",
                   mediaType: "audio/ogg",
-                  hash: [
-                    {
-                      algorithm: "keccak256",
-                      value:
-                        "0x3b33df3d163e86514e9041ac97e3d920a75bbafa8d9c1489e631897874b762cc",
-                    },
-                  ],
+                  hash: ["zQmRyTFRtrv13YFS7TftT5kFXyFcbb95rCuBJTErngrCBgv"],
                 },
               ],
             },
@@ -674,13 +559,7 @@ describe("activity content validations", () => {
                   type: "Link",
                   href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
                   mediaType: "image/jpeg",
-                  hash: [
-                    {
-                      algorithm: "keccak256",
-                      value:
-                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-                    },
-                  ],
+                  hash: ["zQmReZ1EGMTHNdB1izF1cUH3nYZ1htiyQpHQUPws9rRFHpE"],
                 },
               ],
             },
@@ -700,13 +579,7 @@ describe("activity content validations", () => {
                   type: "Link",
                   href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm",
                   mediaType: "video/webm",
-                  hash: [
-                    {
-                      algorithm: "keccak256",
-                      value:
-                        "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
-                    },
-                  ],
+                  hash: ["zQmfWveGhSnUiM2i1tMTsHjho81q4nincHCg9krhecsoLf7"],
                 },
               ],
             },
@@ -727,24 +600,14 @@ describe("activity content validations", () => {
                     type: "Link",
                     href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm",
                     mediaType: "video/webm",
-                    hash: [
-                      {
-                        algorithm: "keccak256",
-                        value:
-                          "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
-                      },
-                    ],
+                    hash: ["zQmfWveGhSnUiM2i1tMTsHjho81q4nincHCg9krhecsoLf7"],
                   },
                   {
                     type: "Link",
                     href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/AWindowsMediaVideo.wmv",
                     mediaType: "video/wmv",
                     hash: [
-                      {
-                        algorithm: "keccak256",
-                        value:
-                          "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a99999",
-                      },
+                      "2Drjgb4a8eC4XheBKCBcbAcaVdEWcKjMbCSZ2L2c9CQs4x98jf",
                     ],
                   },
                 ],
@@ -855,13 +718,7 @@ describe("activity content validations", () => {
               type: "Link",
               href: "https://pbs.twimg.com/profile_images/847818629840228354/VXyQHfn0_400x400.jpg",
               mediaType: "image/jpeg",
-              hash: [
-                {
-                  algorithm: "keccak256",
-                  value:
-                    "0x00a63eb58f6ce7fccd93e2d004fed81da5ec1a9747b63f5f1bf80742026efea7",
-                },
-              ],
+              hash: ["zQmYtUc4iTCbbfVSDNKvtQqrfyezPPnFvE33wFmutw9PBBk"],
             },
           ],
         },
@@ -898,7 +755,7 @@ describe("activity content validations", () => {
         },
         {
           name: "icon has invalid hash value",
-          expErr: "ActivityContentHash value field is not a string",
+          expErr: "ActivityContentImageLink hash is invalid",
           testObject: {
             "@context": "https://www.w3.org/ns/activitystreams",
             type: "Profile",
@@ -908,11 +765,7 @@ describe("activity content validations", () => {
                 type: "Link",
                 href: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Wilhelm_Scream.jpg",
                 mediaType: "image/jpeg",
-                hash: [
-                  {
-                    algorithm: "keccak256",
-                  },
-                ],
+                hash: [{ bad: "value" }],
               },
             ],
           },
@@ -928,11 +781,7 @@ describe("activity content validations", () => {
               {
                 type: "Link",
                 href: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Wilhelm_Scream.jpg",
-                hash: [
-                  {
-                    algorithm: "keccak256",
-                  },
-                ],
+                hash: ["zQmRyTFRtrv13YFS7TftT5kFXyFcbb95rCuBJTErngrCBgv"],
               },
             ],
           },
@@ -1036,13 +885,7 @@ describe("activity content validations", () => {
                   type: "Link",
                   href: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Wilhelm_Scream.ogg",
                   mediaType: "audio/ogg",
-                  hash: [
-                    {
-                      algorithm: "keccak256",
-                      value:
-                        "0x3b33df3d163e86514e9041ac97e3d920a75bbafa8d9c1489e631897874b762cc",
-                    },
-                  ],
+                  hash: ["zQmRyTFRtrv13YFS7TftT5kFXyFcbb95rCuBJTErngrCBgv"],
                 },
               ],
             },
@@ -1062,13 +905,7 @@ describe("activity content validations", () => {
                   type: "Link",
                   href: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mccourt.jpg",
                   mediaType: "image/jpeg",
-                  hash: [
-                    {
-                      algorithm: "keccak256",
-                      value:
-                        "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-                    },
-                  ],
+                  hash: ["zQmReZ1EGMTHNdB1izF1cUH3nYZ1htiyQpHQUPws9rRFHpE"],
                 },
               ],
             },
@@ -1088,13 +925,7 @@ describe("activity content validations", () => {
                   type: "Link",
                   href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm",
                   mediaType: "video/webm",
-                  hash: [
-                    {
-                      algorithm: "keccak256",
-                      value:
-                        "0xf841950dfcedc968dbd63132da844b9f28faea3dbfd4cf326b3831b419a20e9a",
-                    },
-                  ],
+                  hash: ["zQmfWveGhSnUiM2i1tMTsHjho81q4nincHCg9krhecsoLf7"],
                 },
               ],
             },
@@ -1145,7 +976,7 @@ describe("activity content validations", () => {
       };
 
       for (const key in validActivityContentNotes) {
-        it(`Does not throw for a ${key}`, () => {
+        it(`Does not throw for ${key}`, () => {
           expect(() =>
             requireValidActivityContentNote(validActivityContentNotes[key])
           ).not.toThrow();
@@ -1164,13 +995,7 @@ describe("activity content validations", () => {
             type: "Note",
             content: "Hello world!",
             mediaType: "text/plain",
-            hash: [
-              {
-                algorithm: "keccak256",
-                value:
-                  "0x90b3b09658ec527d679c2de983b5720f6e12670724f7e227e5c360a3510b4cb5",
-              },
-            ],
+            hash: ["2Drjgb4a8eC4XheBKCBcbAcaVdEWcKjMbCSZ2L2c9CQs4x98jf"],
           },
         },
         {
@@ -1261,13 +1086,7 @@ describe("activity content validations", () => {
               type: "Link",
               href: "https://pbs.twimg.com/profile_images/847818629840228354/VXyQHfn0_400x400.jpg",
               mediaType: "image/jpeg",
-              hash: [
-                {
-                  algorithm: "keccak256",
-                  value:
-                    "0x00a63eb58f6ce7fccd93e2d004fed81da5ec1a9747b63f5f1bf80742026efea7",
-                },
-              ],
+              hash: ["zQmYtUc4iTCbbfVSDNKvtQqrfyezPPnFvE33wFmutw9PBBk"],
             },
           ],
         },
@@ -1330,7 +1149,8 @@ describe("activity content validations", () => {
         },
         {
           name: "with an icon with an invalid hash",
-          expErr: "ActivityContentHash value is invalid",
+          expErr:
+            "ActivityContent hash algorithms must contain valid multihash with a supported algorithm",
           testObject: {
             "@context": "https://www.w3.org/ns/activitystreams",
             type: "Profile",
@@ -1340,12 +1160,7 @@ describe("activity content validations", () => {
                 type: "Link",
                 mediaType: "image/jpeg",
                 href: "https://pbs.twimg.com/profile_images/847818629840228354/VXyQHfn0_400x400.jpg",
-                hash: [
-                  {
-                    algorithm: "keccak256",
-                    value: "0x0",
-                  },
-                ],
+                hash: ["2Drjgb4a8eC4XheBKCBcbAcaVdEWcKjMbCSZ2L2c9CQs4x98jf"],
               },
             ],
           },
@@ -1353,7 +1168,7 @@ describe("activity content validations", () => {
         {
           name: "with an icon with an unsupported hash algorithm",
           expErr:
-            "ActivityContent hash algorithms must contain at least one of: keccak256",
+            "ActivityContent hash algorithms must contain valid multihash with a supported algorithm",
           testObject: {
             "@context": "https://www.w3.org/ns/activitystreams",
             type: "Profile",
@@ -1363,13 +1178,7 @@ describe("activity content validations", () => {
                 type: "Link",
                 mediaType: "image/jpeg",
                 href: "https://pbs.twimg.com/profile_images/847818629840228354/VXyQHfn0_400x400.jpg",
-                hash: [
-                  {
-                    algorithm: "MD5",
-                    value:
-                      "0x00a63eb58f6ce7fccd93e2d004fed81da5ec1a9747b63f5f1bf80742026efea7",
-                  },
-                ],
+                hash: ["zPmYtUc4iTCbbfVSDNKvtQqrfyezPPnFvE33wFmutw9PBBk=="],
               },
             ],
           },
@@ -1386,13 +1195,7 @@ describe("activity content validations", () => {
                 type: "Link",
                 mediaType: "image/jpeg",
                 href: "ftp://pbs.twimg.com/profile_images/847818629840228354/VXyQHfn0_400x400.jpg",
-                hash: [
-                  {
-                    algorithm: "keccak256",
-                    value:
-                      "0x00a63eb58f6ce7fccd93e2d004fed81da5ec1a9747b63f5f1bf80742026efea7",
-                  },
-                ],
+                hash: ["zQmYtUc4iTCbbfVSDNKvtQqrfyezPPnFvE33wFmutw9PBBk"],
               },
             ],
           },

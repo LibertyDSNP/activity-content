@@ -183,11 +183,8 @@ export interface ActivityContentVideoLink extends ActivityContentLink {
 }
 
 /**
- * ActivtyContentHash represents a hash included in the hash field of an
+ * ActivityContentHash represents a hash included in the hash field of an
  * ActivityContentAudioLink, ActivityContentImageLink or
  * ActivityContentVideoLink object to prove it's authenticity.
  */
-export interface ActivityContentHash {
-  algorithm: string;
-  value: string;
-}
+export type ActivityContentHash = string;

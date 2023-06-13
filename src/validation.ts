@@ -23,6 +23,7 @@ import {
   isArrayOfType,
 } from "./utilities/validation";
 import { InvalidActivityContentError } from "./errors";
+import { fromMultibase, supportedHashCodes } from "./utilities/hash";
 
 /**
  * Regex for ISO 8601 / XML Schema Dates
@@ -36,8 +37,6 @@ const ISO8601_REGEX =
 const HREF_REGEX = /^https?:\/\/.+/;
 const DURATION_REGEX =
   /^-?P(([0-9]+Y)?([0-9]+M)?([0-9]+D)?(T([0-9]+H)?([0-9]+M)?([0-9]+(\.[0-9]+)?S)?)?)+$/;
-const HASH_REGEX = /^0x[0-9A-Fa-f]{64}$/;
-const SUPPORTED_ALGORITHMS = ["keccak256"];
 const SUPPORTED_AUDIO_MEDIA_TYPES = ["audio/mpeg", "audio/ogg", "audio/webm"];
 const SUPPORTED_IMAGE_MEDIA_TYPES = [
   "image/jpeg",
@@ -121,19 +120,23 @@ const hasAtLeastOneSupportedVideoMediaType = (
   return false;
 };
 
-const hasAtLeastOneSupportedHashAlgorithm = (
-  obj: Array<ActivityContentHash>
-): boolean => {
-  for (const hash of obj) {
-    if (
-      hash["algorithm"] === "keccak256" &&
-      isString(hash["value"]) &&
-      hash["value"].match(HASH_REGEX)
-    )
-      return true;
-  }
+const requireIsActivityContentHashArray = (
+  obj: Array<string>
+): obj is Array<ActivityContentHash> => {
+  let hasSupported = false;
 
-  return false;
+  for (const hashVal of obj) {
+    try {
+      const mb = fromMultibase(hashVal);
+      if (!hasSupported && supportedHashCodes.has(mb?.algCode || -1)) {
+        hasSupported = true;
+      }
+    } catch (_e) {
+      // Failed to parse, bad Multibase encoded hash
+      return false;
+    }
+  }
+  return hasSupported;
 };
 
 const toActivityContentAttachment = (
@@ -211,13 +214,12 @@ const requireIsMediaContentLink = (
     throw new InvalidActivityContentError(`${name} type is not 'Link'`);
   requireToString(obj["mediaType"], `${name} mediaType`);
   requireToString(obj["href"], `${name} href`);
-  if (!isArrayOfType(obj["hash"], requireIsActivityContentHash))
+  if (!isArrayOfType(obj["hash"], isString))
     throw new InvalidActivityContentError(`${name} hash is invalid`);
 
-  if (!hasAtLeastOneSupportedHashAlgorithm(obj["hash"]))
+  if (!requireIsActivityContentHashArray(obj["hash"]))
     throw new InvalidActivityContentError(
-      "ActivityContent hash algorithms must contain at least one of: " +
-        SUPPORTED_ALGORITHMS.join(",")
+      "ActivityContent hash algorithms must contain valid multihash with a supported algorithm"
     );
 
   return true;
@@ -277,26 +279,6 @@ const requireToActivityContentLink = (obj: unknown): ActivityContentLink => {
   if (obj["name"]) requireToString(obj["name"], "ActivityContentLink name");
 
   return { type: "Link", href: "", ...obj };
-};
-
-const requireIsActivityContentHash = (
-  obj: unknown
-): obj is ActivityContentHash => {
-  if (!isRecord(obj))
-    throw new InvalidActivityContentError(
-      invalidRecordMessage("ActivityContentHash")
-    );
-  const hashVal = requireToString(
-    obj["value"],
-    "ActivityContentHash value field"
-  );
-  if (!hashVal.match(HASH_REGEX))
-    throw new InvalidActivityContentError(
-      "ActivityContentHash value is invalid"
-    );
-
-  requireToString(obj["algorithm"], "ActivityContentHash algorithm");
-  return true;
 };
 
 const requireIsActivityContentLocation = (

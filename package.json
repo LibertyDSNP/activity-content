@@ -23,7 +23,7 @@
     "doc:markdown": "typedoc --options ./typedoc.json --plugin typedoc-plugin-markdown --out dist/docs",
     "format": "eslint \"**/*.{js,ts}\" --fix",
     "lint": "eslint \"**/*.{js,ts}\"",
-    "test": "jest --config ./jest.config.ts"
+    "test": "NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest --config ./jest.config.ts"
   },
   "author": "",
   "bugs": {
@@ -31,7 +31,8 @@
   },
   "homepage": "https://github.com/LibertyDSNP/activity-content#readme",
   "dependencies": {
-    "js-sha3": "^0.8.0"
+    "@multiformats/blake2": "^1.0.13",
+    "multiformats": "^11.0.2"
   },
   "devDependencies": {
     "@types/jest": "^29.5.2",
