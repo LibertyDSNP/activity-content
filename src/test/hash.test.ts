@@ -1,5 +1,5 @@
 import { bytes } from "multiformats/basics";
-import { toMultibaseHash, toMultibase, fromMultibase } from "../utilities/hash";
+import { toMultibaseHash, toMultibase, fromMultibase } from "../hash";
 
 describe("toMultibaseHash", () => {
   it("hashes sha2-256 correctly", async () => {

@@ -1,4 +1,4 @@
-import {
+import type {
   ActivityContentNote,
   ActivityContentProfile,
   ActivityContentAttachment,
@@ -21,9 +21,9 @@ import {
   isString,
   isNumber,
   isArrayOfType,
-} from "./utilities/validation";
-import { InvalidActivityContentError } from "./errors";
-import { fromMultibase, supportedHashCodes } from "./utilities/hash";
+} from "./utilities/validation.js";
+import { InvalidActivityContentError } from "./errors.js";
+import { fromMultibase, supportedHashCodes } from "./hash.js";
 
 /**
  * Regex for ISO 8601 / XML Schema Dates

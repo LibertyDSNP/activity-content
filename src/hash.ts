@@ -1,11 +1,11 @@
 import type { Codec } from "multiformats/bases/base";
+import type { HexString } from "./types";
 
 import { blake2b256 } from "@multiformats/blake2/blake2b";
 import { sha256 } from "multiformats/hashes/sha2";
 import { decode, create } from "multiformats/hashes/digest";
 import { base58btc } from "multiformats/bases/base58";
 import { bases, bytes } from "multiformats/basics";
-import { HexString } from "../types";
 
 // Note: There are two "encoders"
 // 1. The encoding of the string as a Uint8Array (using the TextEncoder)
@@ -13,7 +13,10 @@ import { HexString } from "../types";
 
 const toUint8Array = new TextEncoder();
 
-type SupportedAlg = "blake2b-256" | "sha2-256";
+/**
+ * Union of supported hash algorithms
+ */
+export type SupportedAlg = "blake2b-256" | "sha2-256";
 
 /**
  * The hash codes supported by this library and DSNP 1.2.0
@@ -67,11 +70,9 @@ export const toMultibase = (
   return base58btc.encode(digest.bytes);
 };
 
-const basesByPrefix: Record<string, Codec<string, string>> = {};
-for (const k in bases) {
-  const codec = bases[k];
-  basesByPrefix[codec.prefix] = codec;
-}
+const basesByPrefix: Record<string, Codec<string, string>> = Object.fromEntries(
+  Object.entries(bases).map(([_k, codec]) => [codec.prefix, codec])
+);
 
 /**
  * Decodes a multibase encoded hash

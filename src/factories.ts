@@ -14,7 +14,7 @@ import type {
   ActivityContentVideoLink,
   DSNPUserURI,
 } from "./types";
-import { toMultibaseHash } from "./utilities/hash";
+import { toMultibaseHash } from "./hash.js";
 
 /**
  * createNote() provides a simple factory for generating an ActivityContentNote

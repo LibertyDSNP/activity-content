@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Used for testing @dsnp/activity-content builds in CI",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "npm run build && node index.js",
     "build": "tsc"
@@ -10,7 +11,7 @@
   "author": "",
   "license": "Apache-2.0",
   "dependencies": {
-    "@dsnp/activity-content": "file:../../dsnp-activity-content.tgz",
+    "@dsnp/activity-content": "file:../../../dist/dsnp-activity-content-1.0.1.tgz",
     "assert": "^2.0.0",
     "typescript": "^4.3.2"
   },
