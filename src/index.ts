@@ -7,8 +7,12 @@ export const errors = errorsImport;
 import * as validationImport from "./validation";
 export const validation = validationImport;
 
+import * as typesImport from "./types";
+export const types = typesImport;
+
 export default {
   factories,
   errors,
   validation,
+  types,
 };

@@ -1,6 +1,9 @@
 # Changelog
 
 ## Unreleased
+### Changes
+- Types are now exported out of `/types` instead of `/factories`
+- Update dependencies
 
 ## [1.0.1] - 2022-04-28
 ### Changes
