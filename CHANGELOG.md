@@ -4,6 +4,7 @@
 ### Changes
 - Types are now exported out of `/types` instead of `/factories`
 - Update dependencies
+- Activity Content Note now requires published field per DSNP 1.2.0
 
 ## [1.0.1] - 2022-04-28
 ### Changes
