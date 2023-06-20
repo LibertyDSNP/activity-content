@@ -38,7 +38,7 @@
 									"fileName": "errors.ts",
 									"line": 7,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/errors.ts#L7"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/errors.ts#L7"
 								}
 							],
 							"signatures": [
@@ -53,7 +53,7 @@
 											"fileName": "errors.ts",
 											"line": 7,
 											"character": 2,
-											"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/errors.ts#L7"
+											"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/errors.ts#L7"
 										}
 									],
 									"parameters": [
@@ -102,7 +102,7 @@
 							"fileName": "errors.ts",
 							"line": 6,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/errors.ts#L6"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/errors.ts#L6"
 						}
 					],
 					"extendedTypes": [
@@ -150,7 +150,7 @@
 									"fileName": "errors.ts",
 									"line": 18,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/errors.ts#L18"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/errors.ts#L18"
 								}
 							],
 							"signatures": [
@@ -165,7 +165,7 @@
 											"fileName": "errors.ts",
 											"line": 18,
 											"character": 2,
-											"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/errors.ts#L18"
+											"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/errors.ts#L18"
 										}
 									],
 									"parameters": [
@@ -216,7 +216,7 @@
 							"fileName": "errors.ts",
 							"line": 17,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/errors.ts#L17"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/errors.ts#L17"
 						}
 					],
 					"extendedTypes": [
@@ -243,7 +243,7 @@
 					"fileName": "errors.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/errors.ts#L1"
+					"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/errors.ts#L1"
 				}
 			]
 		},
@@ -265,7 +265,7 @@
 							"fileName": "factories.ts",
 							"line": 61,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L61"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L61"
 						}
 					],
 					"signatures": [
@@ -299,7 +299,7 @@
 									"fileName": "factories.ts",
 									"line": 61,
 									"character": 37,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L61"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L61"
 								}
 							],
 							"parameters": [
@@ -382,7 +382,7 @@
 							"fileName": "factories.ts",
 							"line": 80,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L80"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L80"
 						}
 					],
 					"signatures": [
@@ -416,7 +416,7 @@
 									"fileName": "factories.ts",
 									"line": 80,
 									"character": 31,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L80"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L80"
 								}
 							],
 							"parameters": [
@@ -535,7 +535,7 @@
 							"fileName": "factories.ts",
 							"line": 237,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L237"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L237"
 						}
 					],
 					"signatures": [
@@ -569,7 +569,7 @@
 									"fileName": "factories.ts",
 									"line": 237,
 									"character": 26,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L237"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L237"
 								}
 							],
 							"parameters": [
@@ -622,7 +622,7 @@
 							"fileName": "factories.ts",
 							"line": 209,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L209"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L209"
 						}
 					],
 					"signatures": [
@@ -656,7 +656,7 @@
 									"fileName": "factories.ts",
 									"line": 209,
 									"character": 29,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L209"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L209"
 								}
 							],
 							"parameters": [
@@ -700,7 +700,7 @@
 							"fileName": "factories.ts",
 							"line": 100,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L100"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L100"
 						}
 					],
 					"signatures": [
@@ -734,7 +734,7 @@
 									"fileName": "factories.ts",
 									"line": 100,
 									"character": 37,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L100"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L100"
 								}
 							],
 							"parameters": [
@@ -817,7 +817,7 @@
 							"fileName": "factories.ts",
 							"line": 119,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L119"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L119"
 						}
 					],
 					"signatures": [
@@ -851,7 +851,7 @@
 									"fileName": "factories.ts",
 									"line": 119,
 									"character": 31,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L119"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L119"
 								}
 							],
 							"parameters": [
@@ -970,7 +970,7 @@
 							"fileName": "factories.ts",
 							"line": 178,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L178"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L178"
 						}
 					],
 					"signatures": [
@@ -1004,7 +1004,7 @@
 									"fileName": "factories.ts",
 									"line": 178,
 									"character": 36,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L178"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L178"
 								}
 							],
 							"parameters": [
@@ -1082,7 +1082,7 @@
 							"fileName": "factories.ts",
 							"line": 194,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L194"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L194"
 						}
 					],
 					"signatures": [
@@ -1116,7 +1116,7 @@
 									"fileName": "factories.ts",
 									"line": 194,
 									"character": 30,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L194"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L194"
 								}
 							],
 							"parameters": [
@@ -1194,7 +1194,7 @@
 							"fileName": "factories.ts",
 							"line": 220,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L220"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L220"
 						}
 					],
 					"signatures": [
@@ -1228,7 +1228,7 @@
 									"fileName": "factories.ts",
 									"line": 220,
 									"character": 29,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L220"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L220"
 								}
 							],
 							"parameters": [
@@ -1306,7 +1306,7 @@
 							"fileName": "factories.ts",
 							"line": 27,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L27"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L27"
 						}
 					],
 					"signatures": [
@@ -1340,7 +1340,7 @@
 									"fileName": "factories.ts",
 									"line": 27,
 									"character": 26,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L27"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L27"
 								}
 							],
 							"parameters": [
@@ -1442,7 +1442,7 @@
 							"fileName": "factories.ts",
 							"line": 46,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L46"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L46"
 						}
 					],
 					"signatures": [
@@ -1476,7 +1476,7 @@
 									"fileName": "factories.ts",
 									"line": 46,
 									"character": 29,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L46"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L46"
 								}
 							],
 							"parameters": [
@@ -1535,7 +1535,7 @@
 							"fileName": "factories.ts",
 							"line": 139,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L139"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L139"
 						}
 					],
 					"signatures": [
@@ -1569,7 +1569,7 @@
 									"fileName": "factories.ts",
 									"line": 139,
 									"character": 37,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L139"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L139"
 								}
 							],
 							"parameters": [
@@ -1652,7 +1652,7 @@
 							"fileName": "factories.ts",
 							"line": 158,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L158"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L158"
 						}
 					],
 					"signatures": [
@@ -1686,7 +1686,7 @@
 									"fileName": "factories.ts",
 									"line": 158,
 									"character": 31,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L158"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L158"
 								}
 							],
 							"parameters": [
@@ -1820,7 +1820,7 @@
 					"fileName": "factories.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/factories.ts#L1"
+					"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/factories.ts#L1"
 				}
 			]
 		},
@@ -1850,7 +1850,7 @@
 							"fileName": "hash.ts",
 							"line": 19,
 							"character": 12,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/hash.ts#L19"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/hash.ts#L19"
 						}
 					],
 					"type": {
@@ -1888,7 +1888,7 @@
 							"fileName": "hash.ts",
 							"line": 24,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/hash.ts#L24"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/hash.ts#L24"
 						}
 					],
 					"type": {
@@ -1919,7 +1919,7 @@
 							"fileName": "hash.ts",
 							"line": 83,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/hash.ts#L83"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/hash.ts#L83"
 						}
 					],
 					"signatures": [
@@ -1953,7 +1953,7 @@
 									"fileName": "hash.ts",
 									"line": 83,
 									"character": 29,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/hash.ts#L83"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/hash.ts#L83"
 								}
 							],
 							"parameters": [
@@ -2004,7 +2004,7 @@
 															"fileName": "hash.ts",
 															"line": 85,
 															"character": 38,
-															"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/hash.ts#L85"
+															"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/hash.ts#L85"
 														}
 													],
 													"type": {
@@ -2023,7 +2023,7 @@
 															"fileName": "hash.ts",
 															"line": 85,
 															"character": 23,
-															"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/hash.ts#L85"
+															"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/hash.ts#L85"
 														}
 													],
 													"type": {
@@ -2042,7 +2042,7 @@
 															"fileName": "hash.ts",
 															"line": 85,
 															"character": 5,
-															"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/hash.ts#L85"
+															"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/hash.ts#L85"
 														}
 													],
 													"type": {
@@ -2071,7 +2071,7 @@
 													"fileName": "hash.ts",
 													"line": 85,
 													"character": 3,
-													"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/hash.ts#L85"
+													"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/hash.ts#L85"
 												}
 											]
 										}
@@ -2092,7 +2092,7 @@
 							"fileName": "hash.ts",
 							"line": 57,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/hash.ts#L57"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/hash.ts#L57"
 						}
 					],
 					"signatures": [
@@ -2126,7 +2126,7 @@
 									"fileName": "hash.ts",
 									"line": 57,
 									"character": 27,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/hash.ts#L57"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/hash.ts#L57"
 								}
 							],
 							"parameters": [
@@ -2203,7 +2203,7 @@
 							"fileName": "hash.ts",
 							"line": 35,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/hash.ts#L35"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/hash.ts#L35"
 						}
 					],
 					"signatures": [
@@ -2237,7 +2237,7 @@
 									"fileName": "hash.ts",
 									"line": 35,
 									"character": 31,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/hash.ts#L35"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/hash.ts#L35"
 								}
 							],
 							"parameters": [
@@ -2329,7 +2329,7 @@
 					"fileName": "hash.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/hash.ts#L1"
+					"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/hash.ts#L1"
 				}
 			]
 		},
@@ -2368,7 +2368,7 @@
 									"fileName": "types.ts",
 									"line": 106,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L106"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L106"
 								}
 							],
 							"type": {
@@ -2389,7 +2389,7 @@
 									"fileName": "types.ts",
 									"line": 105,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L105"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L105"
 								}
 							],
 							"type": {
@@ -2408,7 +2408,7 @@
 									"fileName": "types.ts",
 									"line": 103,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L103"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L103"
 								}
 							],
 							"type": {
@@ -2427,7 +2427,7 @@
 									"fileName": "types.ts",
 									"line": 104,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L104"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L104"
 								}
 							],
 							"type": {
@@ -2457,7 +2457,7 @@
 							"fileName": "types.ts",
 							"line": 102,
 							"character": 17,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L102"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L102"
 						}
 					]
 				},
@@ -2487,7 +2487,7 @@
 									"fileName": "types.ts",
 									"line": 160,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L160"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L160"
 								}
 							],
 							"type": {
@@ -2509,7 +2509,7 @@
 									"fileName": "types.ts",
 									"line": 150,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L150"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L150"
 								}
 							],
 							"type": {
@@ -2533,7 +2533,7 @@
 									"fileName": "types.ts",
 									"line": 159,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L159"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L159"
 								}
 							],
 							"type": {
@@ -2554,7 +2554,7 @@
 									"fileName": "types.ts",
 									"line": 151,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L151"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L151"
 								}
 							],
 							"type": {
@@ -2578,7 +2578,7 @@
 									"fileName": "types.ts",
 									"line": 149,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L149"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L149"
 								}
 							],
 							"type": {
@@ -2609,7 +2609,7 @@
 							"fileName": "types.ts",
 							"line": 158,
 							"character": 17,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L158"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L158"
 						}
 					],
 					"extendedTypes": [
@@ -2647,7 +2647,7 @@
 									"fileName": "types.ts",
 									"line": 70,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L70"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L70"
 								}
 							],
 							"type": {
@@ -2669,7 +2669,7 @@
 							"fileName": "types.ts",
 							"line": 69,
 							"character": 17,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L69"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L69"
 						}
 					]
 				},
@@ -2701,7 +2701,7 @@
 									"fileName": "types.ts",
 									"line": 122,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L122"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L122"
 								}
 							],
 							"type": {
@@ -2720,7 +2720,7 @@
 									"fileName": "types.ts",
 									"line": 120,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L120"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L120"
 								}
 							],
 							"type": {
@@ -2739,7 +2739,7 @@
 									"fileName": "types.ts",
 									"line": 121,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L121"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L121"
 								}
 							],
 							"type": {
@@ -2768,7 +2768,7 @@
 							"fileName": "types.ts",
 							"line": 119,
 							"character": 17,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L119"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L119"
 						}
 					]
 				},
@@ -2798,7 +2798,7 @@
 									"fileName": "types.ts",
 									"line": 169,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L169"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L169"
 								}
 							],
 							"type": {
@@ -2822,7 +2822,7 @@
 									"fileName": "types.ts",
 									"line": 170,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L170"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L170"
 								}
 							],
 							"type": {
@@ -2841,7 +2841,7 @@
 									"fileName": "types.ts",
 									"line": 150,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L150"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L150"
 								}
 							],
 							"type": {
@@ -2865,7 +2865,7 @@
 									"fileName": "types.ts",
 									"line": 168,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L168"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L168"
 								}
 							],
 							"type": {
@@ -2886,7 +2886,7 @@
 									"fileName": "types.ts",
 									"line": 151,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L151"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L151"
 								}
 							],
 							"type": {
@@ -2910,7 +2910,7 @@
 									"fileName": "types.ts",
 									"line": 149,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L149"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L149"
 								}
 							],
 							"type": {
@@ -2936,7 +2936,7 @@
 									"fileName": "types.ts",
 									"line": 171,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L171"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L171"
 								}
 							],
 							"type": {
@@ -2964,7 +2964,7 @@
 							"fileName": "types.ts",
 							"line": 167,
 							"character": 17,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L167"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L167"
 						}
 					],
 					"extendedTypes": [
@@ -3002,7 +3002,7 @@
 									"fileName": "types.ts",
 									"line": 150,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L150"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L150"
 								}
 							],
 							"type": {
@@ -3023,7 +3023,7 @@
 									"fileName": "types.ts",
 									"line": 151,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L151"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L151"
 								}
 							],
 							"type": {
@@ -3042,7 +3042,7 @@
 									"fileName": "types.ts",
 									"line": 149,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L149"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L149"
 								}
 							],
 							"type": {
@@ -3066,7 +3066,7 @@
 							"fileName": "types.ts",
 							"line": 148,
 							"character": 17,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L148"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L148"
 						}
 					],
 					"extendedBy": [
@@ -3115,7 +3115,7 @@
 									"fileName": "types.ts",
 									"line": 49,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L49"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L49"
 								}
 							],
 							"type": {
@@ -3136,7 +3136,7 @@
 									"fileName": "types.ts",
 									"line": 50,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L50"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L50"
 								}
 							],
 							"type": {
@@ -3157,7 +3157,7 @@
 									"fileName": "types.ts",
 									"line": 51,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L51"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L51"
 								}
 							],
 							"type": {
@@ -3178,7 +3178,7 @@
 									"fileName": "types.ts",
 									"line": 52,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L52"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L52"
 								}
 							],
 							"type": {
@@ -3197,7 +3197,7 @@
 									"fileName": "types.ts",
 									"line": 48,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L48"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L48"
 								}
 							],
 							"type": {
@@ -3218,7 +3218,7 @@
 									"fileName": "types.ts",
 									"line": 53,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L53"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L53"
 								}
 							],
 							"type": {
@@ -3237,7 +3237,7 @@
 									"fileName": "types.ts",
 									"line": 47,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L47"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L47"
 								}
 							],
 							"type": {
@@ -3258,7 +3258,7 @@
 									"fileName": "types.ts",
 									"line": 54,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L54"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L54"
 								}
 							],
 							"type": {
@@ -3287,7 +3287,7 @@
 							"fileName": "types.ts",
 							"line": 46,
 							"character": 17,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L46"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L46"
 						}
 					]
 				},
@@ -3317,7 +3317,7 @@
 									"fileName": "types.ts",
 									"line": 79,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L79"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L79"
 								}
 							],
 							"type": {
@@ -3338,7 +3338,7 @@
 									"fileName": "types.ts",
 									"line": 80,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L80"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L80"
 								}
 							],
 							"type": {
@@ -3357,7 +3357,7 @@
 									"fileName": "types.ts",
 									"line": 78,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L78"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L78"
 								}
 							],
 							"type": {
@@ -3381,7 +3381,7 @@
 							"fileName": "types.ts",
 							"line": 77,
 							"character": 17,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L77"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L77"
 						}
 					]
 				},
@@ -3411,7 +3411,7 @@
 									"fileName": "types.ts",
 									"line": 2,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L2"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L2"
 								}
 							],
 							"type": {
@@ -3437,7 +3437,7 @@
 									"fileName": "types.ts",
 									"line": 29,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L29"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L29"
 								}
 							],
 							"type": {
@@ -3461,7 +3461,7 @@
 									"fileName": "types.ts",
 									"line": 28,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L28"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L28"
 								}
 							],
 							"type": {
@@ -3482,7 +3482,7 @@
 									"fileName": "types.ts",
 									"line": 6,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L6"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L6"
 								}
 							],
 							"type": {
@@ -3508,7 +3508,7 @@
 									"fileName": "types.ts",
 									"line": 27,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L27"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L27"
 								}
 							],
 							"type": {
@@ -3529,7 +3529,7 @@
 									"fileName": "types.ts",
 									"line": 4,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L4"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L4"
 								}
 							],
 							"type": {
@@ -3553,7 +3553,7 @@
 									"fileName": "types.ts",
 									"line": 30,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L30"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L30"
 								}
 							],
 							"type": {
@@ -3579,7 +3579,7 @@
 									"fileName": "types.ts",
 									"line": 7,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L7"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L7"
 								}
 							],
 							"type": {
@@ -3619,7 +3619,7 @@
 									"fileName": "types.ts",
 									"line": 26,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L26"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L26"
 								}
 							],
 							"type": {
@@ -3654,7 +3654,7 @@
 							"fileName": "types.ts",
 							"line": 25,
 							"character": 17,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L25"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L25"
 						}
 					],
 					"extendedTypes": [
@@ -3695,7 +3695,7 @@
 									"fileName": "types.ts",
 									"line": 2,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L2"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L2"
 								}
 							],
 							"type": {
@@ -3721,7 +3721,7 @@
 									"fileName": "types.ts",
 									"line": 39,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L39"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L39"
 								}
 							],
 							"type": {
@@ -3747,7 +3747,7 @@
 									"fileName": "types.ts",
 									"line": 6,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L6"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L6"
 								}
 							],
 							"type": {
@@ -3775,7 +3775,7 @@
 									"fileName": "types.ts",
 									"line": 4,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L4"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L4"
 								}
 							],
 							"type": {
@@ -3801,7 +3801,7 @@
 									"fileName": "types.ts",
 									"line": 5,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L5"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L5"
 								}
 							],
 							"type": {
@@ -3827,7 +3827,7 @@
 									"fileName": "types.ts",
 									"line": 38,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L38"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L38"
 								}
 							],
 							"type": {
@@ -3848,7 +3848,7 @@
 									"fileName": "types.ts",
 									"line": 7,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L7"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L7"
 								}
 							],
 							"type": {
@@ -3888,7 +3888,7 @@
 									"fileName": "types.ts",
 									"line": 37,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L37"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L37"
 								}
 							],
 							"type": {
@@ -3922,7 +3922,7 @@
 							"fileName": "types.ts",
 							"line": 36,
 							"character": 17,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L36"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L36"
 						}
 					],
 					"extendedTypes": [
@@ -3965,7 +3965,7 @@
 									"fileName": "types.ts",
 									"line": 139,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L139"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L139"
 								}
 							],
 							"type": {
@@ -3986,7 +3986,7 @@
 									"fileName": "types.ts",
 									"line": 138,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L138"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L138"
 								}
 							],
 							"type": {
@@ -4005,7 +4005,7 @@
 									"fileName": "types.ts",
 									"line": 136,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L136"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L136"
 								}
 							],
 							"type": {
@@ -4024,7 +4024,7 @@
 									"fileName": "types.ts",
 									"line": 137,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L137"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L137"
 								}
 							],
 							"type": {
@@ -4054,7 +4054,7 @@
 							"fileName": "types.ts",
 							"line": 135,
 							"character": 17,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L135"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L135"
 						}
 					]
 				},
@@ -4084,7 +4084,7 @@
 									"fileName": "types.ts",
 									"line": 180,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L180"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L180"
 								}
 							],
 							"type": {
@@ -4108,7 +4108,7 @@
 									"fileName": "types.ts",
 									"line": 181,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L181"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L181"
 								}
 							],
 							"type": {
@@ -4127,7 +4127,7 @@
 									"fileName": "types.ts",
 									"line": 150,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L150"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L150"
 								}
 							],
 							"type": {
@@ -4151,7 +4151,7 @@
 									"fileName": "types.ts",
 									"line": 179,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L179"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L179"
 								}
 							],
 							"type": {
@@ -4172,7 +4172,7 @@
 									"fileName": "types.ts",
 									"line": 151,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L151"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L151"
 								}
 							],
 							"type": {
@@ -4196,7 +4196,7 @@
 									"fileName": "types.ts",
 									"line": 149,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L149"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L149"
 								}
 							],
 							"type": {
@@ -4222,7 +4222,7 @@
 									"fileName": "types.ts",
 									"line": 182,
 									"character": 2,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L182"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L182"
 								}
 							],
 							"type": {
@@ -4250,7 +4250,7 @@
 							"fileName": "types.ts",
 							"line": 178,
 							"character": 17,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L178"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L178"
 						}
 					],
 					"extendedTypes": [
@@ -4281,7 +4281,7 @@
 							"fileName": "types.ts",
 							"line": 87,
 							"character": 12,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L87"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L87"
 						}
 					],
 					"type": {
@@ -4333,7 +4333,7 @@
 							"fileName": "types.ts",
 							"line": 190,
 							"character": 12,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L190"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L190"
 						}
 					],
 					"type": {
@@ -4360,7 +4360,7 @@
 							"fileName": "types.ts",
 							"line": 61,
 							"character": 12,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L61"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L61"
 						}
 					],
 					"type": {
@@ -4400,7 +4400,7 @@
 							"fileName": "types.ts",
 							"line": 20,
 							"character": 12,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L20"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L20"
 						}
 					],
 					"type": {
@@ -4427,7 +4427,7 @@
 							"fileName": "types.ts",
 							"line": 13,
 							"character": 12,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L13"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L13"
 						}
 					],
 					"type": {
@@ -4470,7 +4470,7 @@
 					"fileName": "types.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/types.ts#L1"
+					"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/types.ts#L1"
 				}
 			]
 		},
@@ -4492,7 +4492,7 @@
 							"fileName": "validation.ts",
 							"line": 490,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L490"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L490"
 						}
 					],
 					"signatures": [
@@ -4534,7 +4534,7 @@
 									"fileName": "validation.ts",
 									"line": 490,
 									"character": 41,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L490"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L490"
 								}
 							],
 							"parameters": [
@@ -4583,7 +4583,7 @@
 							"fileName": "validation.ts",
 							"line": 542,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L542"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L542"
 						}
 					],
 					"signatures": [
@@ -4625,7 +4625,7 @@
 									"fileName": "validation.ts",
 									"line": 542,
 									"character": 44,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L542"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L542"
 								}
 							],
 							"parameters": [
@@ -4674,7 +4674,7 @@
 							"fileName": "validation.ts",
 							"line": 61,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L61"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L61"
 						}
 					],
 					"signatures": [
@@ -4708,7 +4708,7 @@
 									"fileName": "validation.ts",
 									"line": 61,
 									"character": 29,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L61"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L61"
 								}
 							],
 							"parameters": [
@@ -4755,7 +4755,7 @@
 							"fileName": "validation.ts",
 							"line": 575,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L575"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L575"
 						}
 					],
 					"signatures": [
@@ -4798,7 +4798,7 @@
 									"fileName": "validation.ts",
 									"line": 575,
 									"character": 53,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L575"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L575"
 								}
 							],
 							"parameters": [
@@ -4848,7 +4848,7 @@
 							"fileName": "validation.ts",
 							"line": 468,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L468"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L468"
 						}
 					],
 					"signatures": [
@@ -4891,7 +4891,7 @@
 									"fileName": "validation.ts",
 									"line": 468,
 									"character": 48,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L468"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L468"
 								}
 							],
 							"parameters": [
@@ -4940,7 +4940,7 @@
 							"fileName": "validation.ts",
 							"line": 514,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L514"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L514"
 						}
 					],
 					"signatures": [
@@ -4983,7 +4983,7 @@
 									"fileName": "validation.ts",
 									"line": 514,
 									"character": 51,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L514"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L514"
 								}
 							],
 							"parameters": [
@@ -5032,7 +5032,7 @@
 							"fileName": "validation.ts",
 							"line": 182,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L182"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L182"
 						}
 					],
 					"signatures": [
@@ -5055,7 +5055,7 @@
 									"fileName": "validation.ts",
 									"line": 182,
 									"character": 50,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L182"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L182"
 								}
 							],
 							"parameters": [
@@ -5099,7 +5099,7 @@
 							"fileName": "validation.ts",
 							"line": 600,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L600"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L600"
 						}
 					],
 					"signatures": [
@@ -5142,7 +5142,7 @@
 									"fileName": "validation.ts",
 									"line": 600,
 									"character": 47,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L600"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L600"
 								}
 							],
 							"parameters": [
@@ -5184,7 +5184,7 @@
 							"fileName": "validation.ts",
 							"line": 634,
 							"character": 13,
-							"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L634"
+							"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L634"
 						}
 					],
 					"signatures": [
@@ -5227,7 +5227,7 @@
 									"fileName": "validation.ts",
 									"line": 634,
 									"character": 50,
-									"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L634"
+									"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L634"
 								}
 							],
 							"parameters": [
@@ -5280,7 +5280,7 @@
 					"fileName": "validation.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/LibertyDSNP/activity-content/blob/7aa4074/src/validation.ts#L1"
+					"url": "https://github.com/LibertyDSNP/activity-content/blob/d1f917e/src/validation.ts#L1"
 				}
 			]
 		}
