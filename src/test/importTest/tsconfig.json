@@ -5,7 +5,7 @@
     "resolveJsonModule": true,
     "inlineSourceMap": true,
 
-    "module": "commonjs",
+    "module": "ES2015",
     "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
 
     "strict": false /* Enable all strict type-checking options. */,

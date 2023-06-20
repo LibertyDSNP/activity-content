@@ -51,13 +51,7 @@ describe("activityPub", () => {
           type: "Link",
           href: "https://upload.wikimedia.org/wikipedia/en/0/01/Hound_Dog_%26_intro_%28live-Ed_Sullivan_2%29.ogg",
           mediaType: "audio/ogg",
-          hash: [
-            {
-              algorithm: "keccak256",
-              value:
-                "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
-            },
-          ],
+          hash: ["zQmav1946cWLvdpmxhVhStj8sgrdsgLojJAxisGHrTPhrTF"],
         },
       ]);
 
@@ -68,13 +62,7 @@ describe("activityPub", () => {
             type: "Link",
             href: "https://upload.wikimedia.org/wikipedia/en/0/01/Hound_Dog_%26_intro_%28live-Ed_Sullivan_2%29.ogg",
             mediaType: "audio/ogg",
-            hash: [
-              {
-                algorithm: "keccak256",
-                value:
-                  "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
-              },
-            ],
+            hash: ["zQmav1946cWLvdpmxhVhStj8sgrdsgLojJAxisGHrTPhrTF"],
           },
         ],
       });
@@ -86,26 +74,14 @@ describe("activityPub", () => {
       const activityContentAudioLink = createAudioLink(
         "https://upload.wikimedia.org/wikipedia/en/0/01/Hound_Dog_%26_intro_%28live-Ed_Sullivan_2%29.ogg",
         "audio/ogg",
-        [
-          {
-            algorithm: "keccak256",
-            value:
-              "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
-          },
-        ]
+        ["zQmav1946cWLvdpmxhVhStj8sgrdsgLojJAxisGHrTPhrTF"]
       );
 
       expect(activityContentAudioLink).toMatchObject({
         type: "Link",
         href: "https://upload.wikimedia.org/wikipedia/en/0/01/Hound_Dog_%26_intro_%28live-Ed_Sullivan_2%29.ogg",
         mediaType: "audio/ogg",
-        hash: [
-          {
-            algorithm: "keccak256",
-            value:
-              "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
-          },
-        ],
+        hash: ["zQmav1946cWLvdpmxhVhStj8sgrdsgLojJAxisGHrTPhrTF"],
       });
     });
   });
@@ -117,13 +93,7 @@ describe("activityPub", () => {
           type: "Link",
           href: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Canmania_Car_show_-_Wimborne_%289589569829%29.jpg",
           mediaType: "image/jpg",
-          hash: [
-            {
-              algorithm: "keccak256",
-              value:
-                "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
-            },
-          ],
+          hash: ["zQmU3i7yp9gA6FXk3R8QXmPNZFtKt3NFXkEcW7kPQzLiNxy"],
           height: 1564,
           width: 2782,
         },
@@ -136,13 +106,7 @@ describe("activityPub", () => {
             type: "Link",
             href: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Canmania_Car_show_-_Wimborne_%289589569829%29.jpg",
             mediaType: "image/jpg",
-            hash: [
-              {
-                algorithm: "keccak256",
-                value:
-                  "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
-              },
-            ],
+            hash: ["zQmU3i7yp9gA6FXk3R8QXmPNZFtKt3NFXkEcW7kPQzLiNxy"],
             height: 1564,
             width: 2782,
           },
@@ -156,26 +120,14 @@ describe("activityPub", () => {
       const activityContentImageLink = createImageLink(
         "https://upload.wikimedia.org/wikipedia/commons/b/bb/Canmania_Car_show_-_Wimborne_%289589569829%29.jpg",
         "image/jpg",
-        [
-          {
-            algorithm: "keccak256",
-            value:
-              "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
-          },
-        ]
+        ["zQmU3i7yp9gA6FXk3R8QXmPNZFtKt3NFXkEcW7kPQzLiNxy"]
       );
 
       expect(activityContentImageLink).toMatchObject({
         type: "Link",
         href: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Canmania_Car_show_-_Wimborne_%289589569829%29.jpg",
         mediaType: "image/jpg",
-        hash: [
-          {
-            algorithm: "keccak256",
-            value:
-              "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
-          },
-        ],
+        hash: ["zQmU3i7yp9gA6FXk3R8QXmPNZFtKt3NFXkEcW7kPQzLiNxy"],
       });
     });
   });
@@ -198,13 +150,7 @@ describe("activityPub", () => {
           type: "Link",
           href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm",
           mediaType: "video/webm",
-          hash: [
-            {
-              algorithm: "keccak256",
-              value:
-                "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
-            },
-          ],
+          hash: ["zQmfWveGhSnUiM2i1tMTsHjho81q4nincHCg9krhecsoLf7"],
           height: 2250,
           width: 4000,
         },
@@ -217,13 +163,7 @@ describe("activityPub", () => {
             type: "Link",
             href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm",
             mediaType: "video/webm",
-            hash: [
-              {
-                algorithm: "keccak256",
-                value:
-                  "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
-              },
-            ],
+            hash: ["zQmfWveGhSnUiM2i1tMTsHjho81q4nincHCg9krhecsoLf7"],
             height: 2250,
             width: 4000,
           },
@@ -237,26 +177,14 @@ describe("activityPub", () => {
       const activityContentVideoLink = createVideoLink(
         "https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm",
         "video/webm",
-        [
-          {
-            algorithm: "keccak256",
-            value:
-              "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
-          },
-        ]
+        ["zQmfWveGhSnUiM2i1tMTsHjho81q4nincHCg9krhecsoLf7"]
       );
 
       expect(activityContentVideoLink).toMatchObject({
         type: "Link",
         href: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm",
         mediaType: "video/webm",
-        hash: [
-          {
-            algorithm: "keccak256",
-            value:
-              "0x0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
-          },
-        ],
+        hash: ["zQmfWveGhSnUiM2i1tMTsHjho81q4nincHCg9krhecsoLf7"],
       });
     });
   });
@@ -294,14 +222,12 @@ describe("activityPub", () => {
   });
 
   describe("createHash", () => {
-    it("returns an ActivityContentHash with the given parameters", () => {
-      const activityContentHash = createHash("Lorem ipsum");
+    it("returns an ActivityContentHash with the given parameters", async () => {
+      const activityContentHash = await createHash("Lorem ipsum");
 
-      expect(activityContentHash).toMatchObject({
-        algorithm: "keccak256",
-        value:
-          "0x4a63a2902ad43de8c568bb4a8acbe12e95e8fbfb3babf985ea871e9fccf2dadb",
-      });
+      expect(activityContentHash).toMatch(
+        "z2DrjgbDFcUWoit2XiRSN3AryzYhLgoSZTjUCdYWoUZbiVksbAp"
+      );
     });
   });
 });

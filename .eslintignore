@@ -6,7 +6,6 @@ coverage/*
 
 /*.d.ts
 /*.map
-/src/*.js
 /*.js
 /jest.config.ts
 /tsconfig.json

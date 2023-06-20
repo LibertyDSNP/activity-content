@@ -1,4 +1,3 @@
-import { hash } from "./utilities/hash";
 import type {
   ActivityContentAudio,
   ActivityContentAudioLink,
@@ -15,6 +14,7 @@ import type {
   ActivityContentVideoLink,
   DSNPUserURI,
 } from "./types";
+import { toMultibaseHash } from "./hash.js";
 
 /**
  * createNote() provides a simple factory for generating an ActivityContentNote
@@ -151,7 +151,7 @@ export const createVideoAttachment = (
  * object.
  * @param href      - The URL of the file
  * @param mediaType - The MIME type of the file (see SUPPORTED_VIDEO_MEDIA_TYPES within validation.ts)
- * @param hash      - An ActivityContentHash object to authenticate the file
+ * @param hash      - An ActivityContentHash [multihash](https://github.com/multiformats/multihash) to authenticate the file
  * @param options - Overrides any default fields for the ActivityContentVideoLink
  * @returns An ActivityContentVideoLink object
  */
@@ -228,13 +228,12 @@ export const createMention = (
 
 /**
  * createHash() provides a simple factory for generating an ActivityContentHash
- * object. This factory assumes the user intends to use a standard Keccak256
- * hash. To use other authentication algorithms, users should build their own
- * ActivityContentHash objects.
+ * compliant multihash. This factory assumes the user intends to use a standard
+ * blake2b-256 hash. To use other authentication algorithms, users should build
+ * their own multihash.
  * @param content - The file content to be hashed
- * @returns An ActivityContentHash containing the keccak256 proof of the content
+ * @returns An ActivityContentHash [multihash](https://github.com/multiformats/multihash) containing the blake2b-256 hash of the content
  */
-export const createHash = (content: string): ActivityContentHash => ({
-  algorithm: "keccak256",
-  value: hash(content),
-});
+export const createHash = (content: string): Promise<ActivityContentHash> => {
+  return toMultibaseHash(content);
+};
