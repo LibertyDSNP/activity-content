@@ -1,6 +1,6 @@
 {
   "name": "@dsnp/activity-content",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "DSNP 1.2.0 Activity Content Library",
   "type": "module",
   "main": "dist/index.js",
