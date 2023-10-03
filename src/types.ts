@@ -55,12 +55,13 @@ export interface ActivityContentLocation {
 }
 
 /**
- * ActivityContentTag is either an ActivityContentHashtag or an
- * ActivityContentMention.
+ * ActivityContentTag is an ActivityContentHashtag, an
+ * ActivityContentMention, or an ActivityContentInteraction.
  */
 export type ActivityContentTag =
-  | ActivityContentHashtag
-  | ActivityContentMention;
+  | ActivityContentMention
+  | ActivityContentInteraction
+  | ActivityContentHashtag;
 
 /**
  * ActivityContentHashtag represents a hashtag associated with an
@@ -78,6 +79,41 @@ export interface ActivityContentMention {
   type: "Mention";
   id: DSNPUserURI;
   name?: string;
+}
+
+/**
+ * ActivityContentInteraction is a DSNP extension enabling a
+ * pseudonymous interaction to be included in a Note or Profile.
+ */
+export interface ActivityContentInteraction {
+  type: "Interaction";
+  name?: string;
+  href: string;
+  rel: string;
+  nonce: string;
+  ticket: VerifiableCredential;
+}
+
+export interface VerifiableCredential {
+  "@context"?: string;
+  type?: Array<string>;
+  issuer?: string;
+  issuanceDate?: string; //date?
+  credentialSchema?: {
+    type: string;
+    id: string; //url
+  };
+  credentialSubject?: {
+    interactionId: string;
+    href: string;
+  };
+  proof?: {
+    type: string;
+    verificationMethod: string;
+    created: string;
+    proofPurpose: "assertionMethod";
+    proofValue: string;
+  };
 }
 
 /**

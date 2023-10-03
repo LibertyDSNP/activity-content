@@ -11,8 +11,14 @@ import {
   createLocation,
   createHashtag,
   createMention,
+  createInteraction,
   createHash,
 } from "../factories";
+
+// No factory for this
+import type {
+  VerifiableCredential,
+} from "../types";
 
 describe("activityPub", () => {
   describe("createNote", () => {
@@ -217,6 +223,52 @@ describe("activityPub", () => {
       expect(activityContentMention).toMatchObject({
         type: "Mention",
         id: "dsnp://1234",
+      });
+    });
+  });
+
+  describe("createInteraction", () => {
+    it("returns an ActivityContentInteraction with the given parameters", () => {
+      const ticket: VerifiableCredential = {
+        "@context": "https://www.w3.org/ns/credentials/v2",
+        type: ["ProductLink", "VerifiableCredential"],
+        issuer: "dsnp://8298729280",
+        issuanceDate: "2023-01-01T19:73:24Z",
+        credentialSchema: {
+          type: "VerifiableCredentialSchema2023",
+          id: "https://dsnp.org/schema/interactions/ProductLink",
+        },
+        credentialSubject: {
+          interactionId: "z3MvGcVxzRzzpKF1HA11EjvfPZs",
+          href: "https://mystore.com/item/123",
+        },
+        proof: {
+          type: "Ed25519Signature2020",
+          verificationMethod: "dsnp://8298729280#3",
+          created: "2023-01-01T12:00:00.000Z",
+          proofPurpose: "assertionMethod",
+          proofValue:
+            "z3MvGcVxzRzzpKF1HA11EjvfPZsN8NAb7kXBRfeTm3CBg2gcJLQM5hZNmj6Ccd9Lk4C1YueiFZvkSx4FuHVYVouQk",
+        },
+      };
+
+      const activityContentInteraction = createInteraction(
+        "dsnp://1234#ProductLink", // rel
+        "zM6VCq9GHfhoHFVXYP2oGxE", // nonce
+        ticket,
+        {
+          name: "Nimbus 2000",
+          href: "https://mystore.com/item/123",
+        }
+      );
+
+      expect(activityContentInteraction).toMatchObject({
+        type: "Interaction",
+        name: "Nimbus 2000",
+        href: "https://mystore.com/item/123",
+        rel: "dsnp://1234#ProductLink",
+        nonce: "zM6VCq9GHfhoHFVXYP2oGxE",
+        ticket,
       });
     });
   });

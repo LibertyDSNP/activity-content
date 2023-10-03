@@ -5,6 +5,7 @@ import type {
   ActivityContentHashtag,
   ActivityContentImage,
   ActivityContentImageLink,
+  ActivityContentInteraction,
   ActivityContentLink,
   ActivityContentLocation,
   ActivityContentMention,
@@ -13,6 +14,7 @@ import type {
   ActivityContentVideo,
   ActivityContentVideoLink,
   DSNPUserURI,
+  VerifiableCredential,
 } from "./types";
 import { toMultibaseHash } from "./hash.js";
 
@@ -223,6 +225,21 @@ export const createMention = (
 ): ActivityContentMention => ({
   type: "Mention",
   id,
+  ...options,
+});
+
+export const createInteraction = (
+  href: string,
+  rel: string,
+  nonce: string,
+  ticket: VerifiableCredential,
+  options?: Partial<ActivityContentInteraction>
+): ActivityContentInteraction => ({
+  type: "Interaction",
+  href,
+  rel,
+  nonce,
+  ticket,
   ...options,
 });
 
